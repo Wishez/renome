@@ -1,0 +1,12 @@
+@import '__refer.scss';
+
+.navItem {
+  width: 20%;
+  @include breakpoint($xs) {
+    width: 100%;
+    text-align: center;
+  }
+  &.active .navItem__refer {
+    
+  }
+} 
