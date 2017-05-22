@@ -1,0 +1,19 @@
+.manage {
+	@include multy-background('../img/manage.jpg', $darkBlue, (350% / 600 * 100), 600px);
+	color: $whiteYellow;
+	& .container {
+		padding: 20% 0 0 (550% / 1366 * 100);
+		@include breakpoint($md)  {
+			padding: 15% 0 0 (550% / 1366 * 100);
+		}
+		@include breakpoint($sm) {
+			padding: 15% 0 0 (400% / 1366 * 100);
+		}
+		@include breakpoint($xs) {
+			padding: 35% 0 0;
+		}
+	}
+	&__decorator--color_yellow {
+		color: $yellow;		
+	}
+}

@@ -1,13 +1,11 @@
-.logo {
-  @include span(8);
-  & .navbar-brand {
-    padding: 0;
-    @include breakpoint($xs) {
-      width: span(12);
-      float: none;
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }
+.brand {
+  @include span(3);
+  min-width: 225px;
+  @include breakpoint($md) {
+  	margin-right: 0;
+  }
+  @include breakpoint($sm) {
+  	min-width: 180px;
   }
 }
 

@@ -1,14 +1,13 @@
 .navList {
   display: inline-flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  font-size: (24em / 16);
   list-style: none;
   width: span(12);
-  @include breakpoint($sm) {
-    font-size: (20em / 16);
-  }
+  // @include breakpoint($sm) {
+  //   font-size: (20em / 16);
+  // }
   @include breakpoint($xs) {
     display: none;
     position: fixed;
@@ -21,7 +20,13 @@
     align-items: space-between;
     z-index: 100;
     padding-top: 30%;
+    // background-color: #b0375d;
+    background-color: lighten($lightRed, 10%);
     
+  }
+  & .fa {
+    font-size: 10px;
+    color: $lightRed;
   }
 }
 

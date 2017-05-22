@@ -1,0 +1,33 @@
+.hint {
+	@include multy-background('../img/hint.jpg', $white, (350% / 600 * 100), 600px);
+	color: $darkGray;
+	& .container {
+		padding: 20% 0 0 9%;
+		@include breakpoint($sm) { 
+			padding-top: 10%;
+		}
+		@include breakpoint($xs) {
+			padding: 25% 0 0;
+		}
+	}
+    &__title {
+	}
+	&__paragraph {
+		@include breakpoint(800px) {
+			width: span(10);
+			margin-left: 0;
+			margin-right: 0;
+			max-width: none;
+		}
+	}
+	&__decorator--color_green {
+		color: #69945a;		
+	}
+	&__decorator--color_lightRed {
+		color: $lightRed;
+		@include smooth-transition-color;
+		&:hover {
+			color: lighten($lightRed, 10%);
+		}		
+	}
+}

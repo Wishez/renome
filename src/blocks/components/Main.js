@@ -1,21 +1,18 @@
 import React, { Component } from 'react'; 
 import { Route } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom';
 import About from './About';
-import Archive  from './Archive';
-import Blog from './Blog';
 import Connect  from './Connect';
 import NotFound from './NotFound';
-import Article from './Article';
 
-		  // <Route path='/:article_id' component={}
 export default class Main extends Component {
   render() {
   	const { content } = this.props;
     return (
-		<main>       
-	      <div className='container'>
-	      	{content}
-		  </div>
+		<main>         
+	  		<Router>
+			  	<Route exact path='/' component={About} />
+	  		</Router>
 	   </main>
    	);
   }

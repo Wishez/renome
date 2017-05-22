@@ -1,13 +1,16 @@
 .title {
-	font: {
-		family: $stackLora;
-		size: (30em / 16);
-		weight: bold;
+	font-size: (63em / 16);
+	@include breakpoint($md-less) {
+		font-size: (55em / 16);
 	}
-	color: $white;
 	@include breakpoint($xs) {
 		text-align: center;
-		font-size: (24em / 16);
+		width: 100%;
+		font-size: (48em / 16);
 		padding: 0 20px;
+	}
+	@include breakpoint($xxs) {
+		font-size: 10vw;
+		width: 100%;
 	}
 }

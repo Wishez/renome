@@ -4,12 +4,9 @@ export default class Contacts extends Component {
   render() {
     return (
       <section className='contacts'>
-        <h3 className='contacts__title'>
-          Контакты
-        </h3>
         <ul className='contactsStock'>
           <li className='contactsStock__item'>
-            <a href='mailto:shiningfinger@list.ru'>
+            <a href='mailto:renome@intrenalmail.ru'>
               <i className='fa fa-envelope-o fa-1x'></i>
               <span>shiningfinger@list.ru</span>
             </a>

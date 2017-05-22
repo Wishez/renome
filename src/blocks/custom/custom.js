@@ -1,3 +1,5 @@
+import * as AOS from 'aos';
+
 $(window).resize(() => {
   let $navList = $('#navList'),
       navListStyle = $navList[0].style;
@@ -8,6 +10,10 @@ $(window).resize(() => {
     navListStyle.display = 'none';
 });
 $(function() {
+  AOS.init({
+    duration: 1500
+  });
+
   $(document).on('click', '.not-follow', openUrlInNewWindow);
 
   function openUrlInNewWindow(e) {
@@ -28,4 +34,13 @@ $(function() {
       $('#navList').hide('fast');
 
   }); // end click
+
+  $(document).on('click', '.makeOffer', (e) => {
+    $('.orderFormWrapper').show('fast');
+    return false;
+  });
+  $(document).on('click', '#closeOrderForm', (e) => {
+    $('.orderFormWrapper').hide('fast');
+  });
+
 });// end ready

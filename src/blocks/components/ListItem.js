@@ -10,20 +10,7 @@ export default class ListItem extends  Component  {
 
 		return (
 			<article className='article'>
-				<a href='#'>
-					<Title block='article' text={article.title} />
-				</a>
-				<small className='article__date'>
-					{ new Date(article.created_at).toLocaleDateString() }
-				</small>
-				<div className='article__text text'>
-					{ ReactHtmlParser(article.announce_text) }
-				</div>
-				<a  
-					href={`{{ url 'article_detail' pk=${article.id} }}`}
-					className='article__toArticle'>
-						Читать дальше&hellip;
-				</a>
+				
 			</article>
 		);
 	}

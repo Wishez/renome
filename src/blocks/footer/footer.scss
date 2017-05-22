@@ -1,7 +1,61 @@
 .footer {
-  min-height: 759px;
   z-index: 0;
+  @include responsive-background;
+  @include multy-background('../img/footer.jpg', transparen, (852% / 2500  * 100), 500px);
+  // padding-top: 5%;
+  
+    padding-top: 95px;
+  @include breakpoint($md)  {
+    padding-top: 55px;
+  }
+  
+  &__brand {
+    font-size: (48em / 16);
+    font-weight: bold;
+  }  
+}
+@import 'contacts/contacts.scss';
+
+
+.copyright {
+	margin-top: 150px;
+  font-size: (18em / 16);
+
+	@include breakpoint($xs) {
+    font-size: (14em / 16);
+    margin-top: 93px;
+	}
+	@include breakpoint($xxs) {
+		font-size: 4vw;
+	}
 }
 
-// @import 'contacts/contacts.scss';
-// @import 'services/services.scss';
+@keyframes wobble {
+  from {
+    transform: none;
+  }
+
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    transform: none;
+  }
+}

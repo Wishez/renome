@@ -1,35 +1,20 @@
-.logo__name {
+.brand__name {
   color: #fff;
   font: {
     family: $stackLora;
-    size: (50em / 16);
+    size: (48em / 16);
     weight: bold;
-    style: italic;
+  }
+  text-align: center;
+  padding: (30% / 157 * 100) (17% / 285 * 100);
+  background-color: $lightRed;
+  @include breakpoint($md-less) {
+    font-size: (36em / 16);
   }
   @include breakpoint($xs) {
-    width: 80%;  
-    min-width: 297px;
-    margin: 0 auto;
-    font-size: 2.2em;
+    padding: 0.5% 0;
   }
-  @include breakpoint($xxs) {
-    min-width: 270px;
-    font-size: 2em;
-  }
-  &::before {
-    top: -45%;
-    left: -7%;
-    @include breakpoint($sm) {
-      top: -40%;
-      left: -5%;
-    }
-    @include breakpoint($xs) {
-      top: -50%;
-      left: -5%;
-    }
-    @include breakpoint($xxs) {
-      top: -60%;
-      left: -6%;
-    }
+  @include breakpoint($sm) {
+    font-size: (30em / 16);
   }
 }

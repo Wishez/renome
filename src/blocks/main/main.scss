@@ -1,12 +1,6 @@
-main > .container {
-	padding: 5% 0;
-	@include breakpoint($xs) {
-		padding: 15% 0;
-	}
-} 
-
-@import 'about/about.scss';
-@import 'connect/connect.scss';
-@import 'title.scss';
 @import 'paragraph.scss';
 @import 'text.scss';
+@import 'title.scss';
+@import 'about/about.scss';
+@import 'connect/connect.scss';
+@import 'orderForm/orderForm.scss';

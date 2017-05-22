@@ -73,7 +73,6 @@ export default class Navigation extends Component {
     const { activeAbout, activeServices, activeContacts, activeTemplates } = this.state;
 
     return (
-      <div>
         <nav className='navigaton'>
           <button id='openMenuButton'
             className='navigation__openMenuButton visible-xs'
@@ -85,6 +84,7 @@ export default class Navigation extends Component {
           </button>
           <ul className='navList'
               id='navList'>
+            
             <li className={this.getActiveClass(activeAbout)}>
               <a 
                 href='#'
@@ -93,6 +93,7 @@ export default class Navigation extends Component {
                 О нас
               </a>
             </li>
+            <i className="fa fa-circle hidden-xs" aria-hidden="true" />  
             <li className={this.getActiveClass(activeServices)}>
               <a 
                 href='#'
@@ -101,6 +102,7 @@ export default class Navigation extends Component {
                   Услуги
               </a>
             </li>
+            <i className="fa fa-circle hidden-xs" aria-hidden="true" />  
             <li className={this.getActiveClass(activeContacts)}>
               <a 
                 href='#'
@@ -109,6 +111,7 @@ export default class Navigation extends Component {
                   Контакты
               </a>
             </li>
+            <i className="fa fa-circle hidden-xs" aria-hidden="true" />  
             <li className={this.getActiveClass(activeTemplates)}>
               <a 
                 href='#'
@@ -119,7 +122,6 @@ export default class Navigation extends Component {
             </li>
           </ul>
         </nav>
-      </div>
     );
   }
 
