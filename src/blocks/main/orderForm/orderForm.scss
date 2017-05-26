@@ -15,11 +15,15 @@
 	margin-left: -250px;
 	@include breakpoint($sm-up) {
 		top: 50%;
-		margin-top: -275px;
+		margin-top: -320px;
+	}
+	@include breakpoint($xs) {
+		width: 100vw;
 	}
 	@include breakpoint($xxs) {
 		margin-left: auto;
 		left: 0;
+		margin-left: -50%;
 		height: 100vh;
 		position: fixed;
 
@@ -42,16 +46,16 @@
 .orderForm {
 	border-color: $lightRed;
 	background-color: $darkBlue;
-	// min-width: 500px;
+	
 	height: 100%;
 	padding-bottom: 20px;
   	@include breakpoint($xxs) {
   		padding: 30px 0;
-		// $xxs-iphone
+		
 	}
 	@include breakpoint($xxs-iphone) {
   		padding: 0 0 10px;
-		// $xxs-iphone
+		
 	}
 	& ::-webkit-input-placeholder {
 		color: #5e5e5e;
@@ -77,11 +81,8 @@
 	  	font-weight: bold;
 	  	@include center-block;
 	  	@include smooth-transition-color;
-	  	// trans
-	  	&:hover {
-	  		color: darken($white, 5%);
-	  		
-	  	}
+	  	$darkenDarkBlue: darken($darkBlue, 5%);
+	  	@include smooth-transition-button($whiteOrange, $darkenDarkBlue);
 	}
 }
 .orderFormController {
@@ -145,7 +146,7 @@
 			font-size: (12em / 16);
 		}
 		&--type_select {
-			line-height: 1.2em !important;
+			line-height: 0.9em !important;
 			min-height: 30px !important;
 			padding: 0.8em 0.3em !important;
 		}

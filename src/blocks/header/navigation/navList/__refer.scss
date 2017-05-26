@@ -4,8 +4,6 @@
   font-weight: bold;
   text-align: center;
   font-size: (21em / 16);
-  // max-height: 24px;
-  // padding: ((32% / 49) * 10) 0 0 ((170% / 233) * 10);
   color: #fefeff;
   display: block;
   transition: border-bottom 0.5s;
@@ -32,14 +30,4 @@
     background-color: $lightRed;
     transition: width 0.5s;
   }
-  // @include breakpoint(max-width 992px) {
-  //   min-height: 44px;
-  // }
-  // @include breakpoint($xs) {
-  //   // background-color: transparent;
-  //   // padding: ((10% / 49) * 10) 0 0 0;
-  // }
-  // @include breakpoint($xxs) {
-  //   padding-top: ((15% / 49) * 10);
-  // }
 }

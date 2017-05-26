@@ -1,0 +1,29 @@
+.miniOrderButton {
+	padding: 1.5%;
+	@extend .service__title;
+	&--backgroundColor {
+		&_green {
+			background-color: #baeabd;
+		}	
+		&_purple {
+			background-color: $purple;
+		}
+		&_black {
+			background-color: $darkGray;
+		}
+		&_white {
+			background-color: $white;
+		}
+		&_whiteOrange {
+			background-color: $whiteOrange;
+		}
+	}
+	&--color {
+		&_black {
+			color: $darkGray;
+		}	
+		&_white {
+			color: $white;
+		}
+	}
+}

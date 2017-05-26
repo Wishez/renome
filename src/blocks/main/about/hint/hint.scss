@@ -1,5 +1,5 @@
 .hint {
-	@include multy-background('../img/hint.jpg', $white, (350% / 600 * 100), 600px);
+	@include multy-background('../img/hint.jpg', $white, (350% / 600 * 100), 675px);
 	color: $darkGray;
 	& .container {
 		padding: 20% 0 0 9%;
@@ -8,6 +8,9 @@
 		}
 		@include breakpoint($xs) {
 			padding: 25% 0 0;
+		}
+		@include breakpoint($xxs) {
+			padding-bottom: 35%;
 		}
 	}
     &__title {

@@ -1,12 +1,12 @@
 .greet {
-	@include multy-background('../img/greet.jpg', $lightRed, (350% / 600 * 100), 600px);
+	@include multy-background('../img/greet.jpg', $lightRed, (350% / 600 * 100), 675px);
 	& .container {
 		padding: 28% 0 0 9%;
 		@include breakpoint($sm) {
 			padding-top: 25%;
 		}
 		@include breakpoint($xs) {
-			padding: 30% 0 0;
+			padding: 25% 0 0;
 		}
 		@include breakpoint($xxs) {
 			padding-top: 40%;
@@ -24,6 +24,9 @@
 		position: absolute;
 		top: 60%;
 		right: 11%;
+		@include breakpoint($md) {
+			right: 7%;
+		}
 		@include breakpoint($sm) {
 			right: auto;
 			font-size: 1.5em;
@@ -31,8 +34,11 @@
 			min-height: 56px;
 			top: 83%;
 		}
-		@include breakpoint($xs) {
+		@include breakpoint($sm-less) {
 			position: static;
+		}
+
+		@include breakpoint($xs) {
 			font-size: (24em / 16);
 			margin-top: 70px;
 			min-width: 215px;

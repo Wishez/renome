@@ -86,21 +86,19 @@ export default class Navigation extends Component {
               id='navList'>
             
             <li className={this.getActiveClass(activeAbout)}>
-              <a 
-                href='#'
+              <Link to='/'
                 className='navItem__refer'
                 onClick={this.changeActiveAbout}>
                 О нас
-              </a>
+              </Link>
             </li>
             <i className="fa fa-circle hidden-xs" aria-hidden="true" />  
             <li className={this.getActiveClass(activeServices)}>
-              <a 
-                href='#'
+              <Link to='/services'
                 className='navItem__refer'
                 onClick={this.changeActiveServices}>
-                  Услуги
-              </a>
+                Услуги
+              </Link>
             </li>
             <i className="fa fa-circle hidden-xs" aria-hidden="true" />  
             <li className={this.getActiveClass(activeContacts)}>
@@ -151,6 +149,12 @@ export default class Navigation extends Component {
     //   default:
     //     return normalState;
     // }
+              // <a 
+              //   href='#'
+              //   className='navItem__refer'
+              //   onClick={this.changeActiveServices}>
+              //     Услуги
+              // </a>
   }
 }
 
@@ -181,3 +185,9 @@ export default class Navigation extends Component {
 //                   className='navItem__refer'
 //                   onClick={this.toggleMenu}>Архив</Link>
 //             </li>
+//             <a 
+              //   href='#'
+              //   className='navItem__refer'
+              //   onClick={this.changeActiveAbout}>
+              //   О нас
+              // </a>

@@ -1,0 +1,49 @@
+.tasksListItem {
+}
+
+
+.tasksListItem__title {
+
+}
+
+.tasksListItem__paragraph {
+	width: 100%;
+	margin-right: 0;
+	max-width: none;
+	font-size: (24em / 16);
+	line-height: (35em / 24);
+	margin-top: 1em !important;
+	@include breakpoint($xs) {
+		font-size: (21em / 16);
+		padding: 0 5%;
+	}
+	@include breakpoint($xxs) { 
+		font-size: (18em / 16);
+	}
+}
+
+.tasksListItem__icon {
+	margin-right: 27px;
+	@include breakpoint($xs) {
+		margin-right: 15px;
+	}
+}
+
+.tasksList li:last-of-type {
+	& .tasksListItem__paragraph {
+		&::before {
+			content: '';
+			display: inline-block;
+			background: url('../img/icons/explosion.png') center no-repeat;
+			background-size: 40px 40px;
+			width: 40px;
+			height: 40px;
+			vertical-align: sub;
+			@extend .tasksListItem__icon;
+		}
+	}
+}
+
+.tasksListItem__icon, .tasksListItem__title {
+	color: $orange;
+}

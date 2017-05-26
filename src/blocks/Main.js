@@ -9,6 +9,8 @@ const store = configureStore();
 
 render((
   <Provider store={store}>
-    <App />
+  	<Router>
+    	<App />
+    </Router>
   </Provider>
 ), document.getElementById('root'));

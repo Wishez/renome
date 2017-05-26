@@ -5,7 +5,7 @@ import OrderForm from './OrderForm';
 export default class About extends Component {
 	render() {
 		return (
-			<div className='about'>
+			<section className='about'>
 				<OrderForm />
 				<AboutItem 
 				 block='greet'
@@ -27,11 +27,11 @@ export default class About extends Component {
 					просто при помощи CMS &mdash; Django." />
 				<AboutItem block='hint' 
 					title="Как заказать сайт на <strong class='hint__decorator--color_green'>Django</strong>"
-					text="Заказать разработку сайта на Django достаточно просто. Нажмите на кнопку “<a href='#' class='makeOffer'><span class='hint__decorator--color_lightRed'>Сделать заказ</span></a>”
+					text="Заказать разработку сайта на Django достаточно просто. Нажмите на кнопку “<a href='#' class='makeOrder'><span class='hint__decorator--color_lightRed'>Сделать заказ</span></a>”
 				    в верху главной страницы, после чего заполните все поля формы.  В ближайшее
 				    время мы свяжемся с вами и обсудим все детали вашего проекта.
 					После мы создадим ТЗ по дальнейшей работеи будем воплощать вашу идею в реальность." />
-			</div>
+			</section>
 
 		);
 	}

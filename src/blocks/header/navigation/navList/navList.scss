@@ -5,9 +5,6 @@
   align-items: center;
   list-style: none;
   width: span(12);
-  // @include breakpoint($sm) {
-  //   font-size: (20em / 16);
-  // }
   @include breakpoint($xs) {
     display: none;
     position: fixed;
@@ -20,7 +17,7 @@
     align-items: space-between;
     z-index: 100;
     padding-top: 30%;
-    // background-color: #b0375d;
+    height: 100vh;
     background-color: lighten($lightRed, 10%);
     
   }

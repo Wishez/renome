@@ -8,24 +8,18 @@
   @include breakpoint($xs) {
     margin-top: 0;
     position: fixed;
+
     
   }
 }
 
-// .collapsed {
-//   position: fixed;
-//   max-height: 30px;
-//   margin-top: 0;
-//   & .brand__name, & {
-//     width: 100%;
-//   }
-//   & .brand__name {
-//     height: 100%;
-//   }
-//   & .navigation {
-//     position: absolute;
-//   }
-// }  
+
+ 
 
 @import 'logo/logo.scss';
 @import 'navigation/navigation.scss';
+.header, .navigation, .navList, .brand {
+  @include breakpoint($xs) {
+    width: 100vw;  
+  }
+}

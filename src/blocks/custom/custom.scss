@@ -18,6 +18,8 @@ $yellow: #fedd00;
 $whiteYellow: #fff8c9;
 $orange: #f1a81c;
 $whiteOrange: #fad17a;
+$limon: #f5ff9a;
+$purple: #5f4575;
 $nightBlack: #3f3c39;
 $lightRed: #7e2843;
 $brown: #66320a;
@@ -33,8 +35,9 @@ $md: 992px 1199px;
 $md-less: max-width 1199px;
 $sm-up: 800px;
 $sm: 801px 991px;
+$sm-less: max-width 991px;
 $xs-only: 480px 800px;
-$xs: max-width 767px;
+$xs: max-width 800px;
 $xxs: max-width 445px;
 $xxs-iphone: max-width 320px;
 /* Mixins */
@@ -62,12 +65,34 @@ $xxs-iphone: max-width 320px;
   margin-right: auto;
   display: block !important;
 }
-@mixin responsive-background {
+@mixin responsive-background($padding-bottom: false, $url: false) {
   background: center top no-repeat fixed;
   background-size: cover;
+  @if $padding-bottom {
+    padding-bottom: #{$padding-bottom};
+  }
+  @if $url {
+    background-image: url('#{$url}');
+  }
 }
 @mixin smooth-transition-color {
   transition: color 0.5s;
+}
+@mixin smooth-transition-button($font-color, $background-color) {
+  transition: color 0.5s, background-color 0.5s, transform 0.1s;
+  &:hover {
+    color: #{$font-color};
+    background-color: #{$background-color};
+  }
+  &:active {
+    transform: translateY(3px);
+  }
+}
+@mixin flexable($flex, $dir_wrap, $content, $align) {
+  display: #{$flex};
+  flex-flow: #{$dir_wrap};
+  justify-content: #{$content};
+  align-items: #{$align};
 }
 /* Body Custom */
 html, body {
@@ -95,6 +120,10 @@ body {
     family: $stackLora;
     size: 16px;
   }
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures contextual;
+  font-feature-settings: "kern", "liga", "clig", "calt";
   line-height: 145%;
   font-size-adjust: 100%;
   word-break: break-word;
@@ -106,6 +135,10 @@ body {
 }
 button, a {
   cursor: pointer;
+}
+
+ul, ol {
+  list-style: none;
 }
 
 a {

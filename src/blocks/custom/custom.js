@@ -4,7 +4,7 @@ $(window).resize(() => {
   let $navList = $('#navList'),
       navListStyle = $navList[0].style;
   
-  if (window.innerWidth > 767) 
+  if (window.innerWidth > 800) 
     navListStyle.display = 'inline-flex';
   else  
     navListStyle.display = 'none';
@@ -35,12 +35,16 @@ $(function() {
 
   }); // end click
 
-  $(document).on('click', '.makeOffer', (e) => {
+  $(document).on('click', '.makeOrder', (e) => {
     $('.orderFormWrapper').show('fast');
     return false;
   });
-  $(document).on('click', '#closeOrderForm', (e) => {
-    $('.orderFormWrapper').hide('fast');
+  $(document).on('click', '#closeOrderForm, body', (e) => {
+    const $formWrapper = $('.orderFormWrapper');
+    if (!$(e.target).is('.orderFormWrapper, .orderFormWrapper *'))
+      $formWrapper.hide('fast');
+    else if ($(e.target).is('#closeOrderForm'))
+      $formWrapper.hide('fast');
   });
 
 });// end ready

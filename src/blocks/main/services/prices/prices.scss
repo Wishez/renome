@@ -1,0 +1,18 @@
+
+.prices {
+	@include responsive-background;
+	@include multy-background('../img/prices.jpg', $gray, (318% / 1820 * 100), 1820px );
+	@extend .about__item;
+	padding-top: (161% / 1820 * 100);
+	@include breakpoint($xs) {
+		max-height: none;
+
+	}
+}
+
+.prices__title {
+	@extend .process__title;
+	text-center: inherit;
+}
+
+@import 'listPrices/listPrices.scss';

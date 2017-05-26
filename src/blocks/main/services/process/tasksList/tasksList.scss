@@ -1,0 +1,11 @@
+.tasksList {
+	margin-top: (90% / 976 * 100);
+	@include breakpoint($xs) {
+		margin-top: (111% / 976 * 100);
+	}
+	@include breakpoint($xxs) {
+		margin-top: (131% / 976 * 100);
+	}
+}
+
+@import 'tasksListItem.scss';

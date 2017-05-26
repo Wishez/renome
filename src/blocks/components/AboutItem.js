@@ -8,7 +8,7 @@ export default class AboutItem extends Component {
 	render() {
 		const { block, title, text } = this.props;
 		const button = block === 'greet' ?
-		 	<button className="greet__offerBtn makeOffer">
+		 	<button className="greet__offerBtn makeOrder">
 				Сделать заказ
 			</button> : '';
 		return (
