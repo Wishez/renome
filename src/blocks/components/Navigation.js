@@ -8,18 +8,18 @@ export default class Navigation extends Component {
     
     this.state = {
         isOpen: false,
-        activAbout: true,
+        activAbout: false,
         activeServices: false,
-        activeContacts: false,
-        activeTemplates: false
+        activeConnect: false,
+        activePatterns: false
     };
 
     this.getActiveClass = this.getActiveClass.bind(this);
     this.openMenu = this.openMenu.bind(this);
     this.changeActiveServices = this.changeActiveServices.bind(this);
     this.changeActiveAbout = this.changeActiveAbout.bind(this);
-    this.changeActiveContacts = this.changeActiveContacts.bind(this);
-    this.changeActiveTemplates = this.changeActiveTemplates.bind(this);
+    this.changeActiveConnect = this.changeActiveConnect.bind(this);
+    this.changeActivePatterns = this.changeActivePatterns.bind(this);
     this.cleanActiveState = this.cleanActiveState.bind(this);
   }
   
@@ -39,8 +39,8 @@ export default class Navigation extends Component {
     this.setState({
       activeAbout: false,
       activeServices: false,
-      activeContacts: false,
-      activeTemplates: false
+      activeConnect: false,
+      activePatterns: false
     });
 
   }
@@ -55,22 +55,27 @@ export default class Navigation extends Component {
 
     this.setState({activeServices: true});
   }
-  changeActiveContacts() {
+  changeActiveConnect() {
     this.cleanActiveState();
 
-    this.setState({activeContacts: true});
+    this.setState({activeConnect: true});
 
   }
-  changeActiveTemplates() {
+  changeActivePatterns() {
     this.cleanActiveState();
 
-    this.setState({activeTemplates: true});
+    this.setState({activePatterns: true});
 
   }
+
+  componentDidMount() {
+    this.changeActiveAbout();
+  }
+
    
   render() {
 
-    const { activeAbout, activeServices, activeContacts, activeTemplates } = this.state;
+    const { activeAbout, activeServices, activeConnect, activePatterns } = this.state;
 
     return (
         <nav className='navigaton'>
@@ -101,22 +106,20 @@ export default class Navigation extends Component {
               </Link>
             </li>
             <i className="fa fa-circle hidden-xs" aria-hidden="true" />  
-            <li className={this.getActiveClass(activeContacts)}>
-              <a 
-                href='#'
+            <li className={this.getActiveClass(activeConnect)}>
+              <Link to='/connect'
                 className='navItem__refer'
-                onClick={this.changeActiveContacts}>
-                  Контакты
-              </a>
+                onClick={this.changeActiveConnect}>
+                Контакты
+              </Link>
             </li>
             <i className="fa fa-circle hidden-xs" aria-hidden="true" />  
-            <li className={this.getActiveClass(activeTemplates)}>
-              <a 
-                href='#'
+            <li className={this.getActiveClass(activePatterns)}>
+              <Link to='/patterns' 
                 className='navItem__refer'
-                onClick={this.changeActiveTemplates}>
-                  Шаблоны
-              </a>
+                onClick={this.changeActivePatterns}>
+                Шаблоны
+              </Link>
             </li>
           </ul>
         </nav>

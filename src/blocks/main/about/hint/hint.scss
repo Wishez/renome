@@ -14,6 +14,8 @@
 		}
 	}
     &__title {
+		@extend .greet__title;
+		color: $darkGray;
 	}
 	&__paragraph {
 		@include breakpoint(800px) {

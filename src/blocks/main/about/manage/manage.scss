@@ -10,8 +10,15 @@
 			padding: 15% 0 0 (400% / 1366 * 100);
 		}
 		@include breakpoint($xs) {
-			padding: 45% 0 0;
+			padding: 30% 0 0;
 		}
+		@include breakpoint($xxs) {
+			padding-top: 45%;
+		}
+	}
+	&__title {
+		@extend .greet__title;
+		color: $whiteYellow; 
 	}
 	&__decorator--color_yellow {
 		color: $yellow;		

@@ -1,5 +1,6 @@
 .title {
 	font-size: (63em / 16);
+	font-weight: bold;
 	@include breakpoint($md-less) {
 		font-size: (55em / 16);
 	}

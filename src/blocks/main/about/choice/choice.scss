@@ -10,6 +10,10 @@
 			padding-top: 45%;
 		}
 	}
+	&__title {
+		@extend .greet__title;
+		color: $brown;
+	}
 	&__title, &__paragraph {
 		@include center-block;
 	}

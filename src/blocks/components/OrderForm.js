@@ -4,9 +4,12 @@ import { Select } from 'semantic-ui-react';
 import { servicesOptions } from '../constants/servicesOptions.js';
 import IntelTelInput from 'react-intl-tel-input';
 import 'file?name=libphonenumber.js!./../../../node_modules/react-intl-tel-input/dist/libphonenumber.js';
+import crossDomainRequest from './../constants/crossDomainRequest.js';
+// import * as Cookies from 'js-cookie';
 
 const required = value => value ? undefined : 'Заполните, пожалуйста, это поле, и спасибо',
-	  email = value => value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value) ? 'Неправильный e-mail адрес' : undefined;
+	  email = value => value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value) ? 'Неправильный e-mail адрес' : undefined,
+	  phone = value => value && !/^[^A-Za-z]+$/.test(value) ? 'Неправильный номер телефон' : undefined;
 
 const renderField = ({ input, type, label, placeholder, icon,  meta: { touched, error, warning }, fieldType, maxLength}) => {
 	let field;
@@ -70,14 +73,36 @@ const renderField = ({ input, type, label, placeholder, icon,  meta: { touched, 
 class OrderForm extends Component  {
 
 	submit(values, dispatch) {
-		values.service = $('#service').find('select').val();
-		values.phone = $('#phone').val();
-
+		values.phone = $(':input[name="phone"]').val();
+		values.service = $(':input[name="service"]').val();
 		console.log(values);
+		$.ajaxSetup({
+			url: '/order/',
+			type: 'POST',
+			data: values,
+			beforeSend(xhr, settings) {
+				crossDomainRequest(xhr, settings, this);
+			}
+		});
+
+		$.ajax({
+			success: (respond) => {
+				console.log(respond);
+				$('#orderForm').hide();
+				$('.orderFormWrapper').append(respond);
+				$('.connect').css('max-height', '1280px')
+			},
+			error: (xhr, errmsg, err) => {
+				console.log('fail\n', err);
+
+			}
+
+		});
 	}
 
 	render() {
-		const { handleSubmit } = this.props;
+		const { handleSubmit, phoneChangeHandler } = this.props;
+		
 		return (
 			<div className='orderFormWrapper'>
 				<i className='fa fa-close' 
@@ -102,10 +127,11 @@ class OrderForm extends Component  {
 					/>
 					<Field 
 						component={renderField}
+						name='phone'
 						label='Телефон'
 						maxLength='24'
 						fieldType='telephone'
-						validate={[ required ]}
+						validate={[ phone ]}
 						icon='fa-phone'
 					/>
 					<Field 
@@ -119,10 +145,11 @@ class OrderForm extends Component  {
 						icon='fa-envelope'
 					/>
 					<Field 
+						name='service'
 						fieldType='select'
 						component={renderField}
 						label='Услуга'
-						validate={[ required ]}
+						validate={[]}
 					/>
 					<Field 
 						name='comment'

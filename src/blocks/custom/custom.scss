@@ -61,8 +61,8 @@ $xxs-iphone: max-width 320px;
   }
 }
 @mixin center-block {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
   display: block !important;
 }
 @mixin responsive-background($padding-bottom: false, $url: false) {

@@ -6,7 +6,7 @@
   margin-top: 50px;
   list-style-type: none;
   @include breakpoint($xs) {
-    margin-top: 0;
+    margin-top: 90px;
     font-size: (18em / 16);
   }
   & a {

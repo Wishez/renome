@@ -9,6 +9,7 @@ $(window).resize(() => {
   else  
     navListStyle.display = 'none';
 });
+
 $(function() {
   AOS.init({
     duration: 1500

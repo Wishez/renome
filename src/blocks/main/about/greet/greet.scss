@@ -12,6 +12,9 @@
 			padding-top: 40%;
 		}
 	}
+	&__title {
+		font-weight: normal;
+	}
 	&__offerBtn {
 		background-color: $green;
 		color: $white;

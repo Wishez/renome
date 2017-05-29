@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
 // import { BrowserHistory as Router, browserHistory } from 'react-router-dom';
 import About from './About';
-// import Connect  from './Connect';
+import Connect from './Connect';
 import NotFound from './NotFound';
 import Services from './Services';
+import Patterns from './Patterns';
 
 export default class Main extends Component {
   render() {
@@ -13,11 +14,9 @@ export default class Main extends Component {
 		<main>         
 		  	<Route exact path='/' component={About} />
 		  	<Route path='/services' component={Services} />
+		  	<Route path='/connect' component={Connect} />
+		  	<Route path='/patterns' component={Patterns} />
    		</main>
    	);
   }
 }
-		    
-	     //    <Route path="/connect" component={Connect}/>
-	     //    <Route path="/archive" component={Archive}/>
-	  	  //   <Route path="/:article_id" component={Article}/>

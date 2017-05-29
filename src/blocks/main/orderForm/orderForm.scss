@@ -23,7 +23,6 @@
 	@include breakpoint($xxs) {
 		margin-left: auto;
 		left: 0;
-		margin-left: -50%;
 		height: 100vh;
 		position: fixed;
 
@@ -83,6 +82,10 @@
 	  	@include smooth-transition-color;
 	  	$darkenDarkBlue: darken($darkBlue, 5%);
 	  	@include smooth-transition-button($whiteOrange, $darkenDarkBlue);
+	  	&:focus {
+	  		color: currentColor;
+	  		outline: 0;
+	  	}
 	}
 }
 .orderFormController {
@@ -219,3 +222,5 @@
 .country-list {
 	background-color: $darkGray !important;
 }
+
+@import 'success.scss';
