@@ -1,0 +1,42 @@
+.process {
+	@extend .about__item;
+	@include multy-background('../img/process.jpg', $darkGray, 86%,976px)
+	@include breakpoint($lg) {
+		padding-bottom: 50%;
+	}
+	& > .container {
+		padding: (77% / 976 * 100) 0 20%;
+		@include breakpoint($xs) {
+			padding-top: (97% / 976 * 100);
+		}
+		@include breakpoint($xxs) {
+			padding-top: (117% / 976 * 100);
+		}
+	}
+}
+
+.process__title, .process__btn {
+	font-weight: bold;
+}
+	
+.process__title {
+	@include breakpoint($xs) {
+		font-size: (48em / 16);
+	}
+	@include breakpoint($xxs) { 
+		font-size: 11vw;
+	}		
+}
+.process__btn {
+	font-size: (24em / 16);
+	padding: 1.5%;
+	margin-top: 3.5em;
+	background-color: $orange;
+	color: $darkGray;
+	$lightenDarkGray: lighten($darkGray, 5%);
+	$lightenOrange: lighten($orange, 5%);
+	@include smooth-transition-button($lightenDarkGray, $lightenOrange);
+	@include center-block;
+}
+
+@import 'tasksList/tasksList.scss';

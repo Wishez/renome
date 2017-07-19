@@ -1,0 +1,23 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .about__item, .footer, .prices, .process, .connect, .groupPatterns, .bigTitle  {
+	  background-attachment: scroll;
+  }
+  .listPricesItem {
+  	display: block;
+  	height: 495px;
+  	position: relative;
+  }
+
+  .listPricesItem__title, .pricing:nth-child(3)  {
+	padding: 1em 0;
+  }
+  .pricing {
+  	padding: 0.5em 0 0;
+  }
+  .listPricesItem__btn {
+  	width: 100%;
+  	height: 80px;
+  	position: absolute;
+  	bottom: 0;
+  }
+}

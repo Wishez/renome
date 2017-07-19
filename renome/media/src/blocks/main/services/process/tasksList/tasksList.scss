@@ -1,0 +1,14 @@
+.tasksList {
+	margin-top: (90% / 976 * 100);
+	@include pretty-xs-sides-paddings;
+	@include breakpoint($xs) {
+		margin-top: (111% / 976 * 100);
+		// padding: 0 10%;
+	}
+	@include breakpoint($xxs) {
+		margin-top: (131% / 976 * 100);
+		// padding: 0 5%;
+	}
+}
+
+@import 'tasksListItem.scss';

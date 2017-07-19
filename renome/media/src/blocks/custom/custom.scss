@@ -1,0 +1,221 @@
+/* Grid */
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  gutter-position: split,
+  global-box-sizing: border-box
+);
+
+@include border-box-sizing;
+
+/* Fonts */
+$stackLora: 'Lora', serif;
+/* Colors */
+
+$green: #468b4b;
+$darkBlue: #49628b;
+$yellow: #fedd00;
+$whiteYellow: #fff8c9;
+$orange: #f1a81c;
+$whiteOrange: #fad17a;
+$limon: #f5ff9a;
+$purple: #5f4575;
+$nightBlack: #3f3c39;
+$lightRed: #7e2843;
+$brown: #66320a;
+$lightBrown: #af6f00;
+$shadow: rgba(0, 0, 0, .6);
+$lightGray: #c7c2c6;
+$gray: #878787;
+$darkGray:  #2c2c2c;
+$white: #fefeff;
+/* breakpoints */
+$lg: 1200px;
+$md: 992px 1199px;
+$md-less: max-width 1199px;
+$sm-up: 800px;
+$sm: 801px 991px;
+$sm-less: max-width 991px;
+$xs-up: 800px;
+$xs-only: 480px 800px;
+$xs: max-width 800px;
+$xxs: max-width 445px;
+$xxs-iphone: max-width 320px;
+/* Mixins */
+
+.prettyXsSidesPaddings {
+  @include breakpoint($xs) {
+    padding: 0 10%;
+  }
+  @include breakpoint($xxs) {
+    padding: 0 5%;
+  }
+}
+
+@mixin pretty-xs-sides-paddings {
+  @extend .prettyXsSidesPaddings;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+@mixin round() {
+  @extend .round;
+}
+
+.xsCenterText {
+    @extend .text-center;
+    display: block;
+    width: span(12);  
+}
+
+@mixin xs-center-text() {
+  @include breakpoint($xs) {
+    @extend .xsCenterText;
+  }
+}
+
+@mixin multy-background($url, $color, $padding-bottom, $max-height) {
+  background-image: url("#{$url}");
+  max-height: #{$max-height};
+  padding-bottom: #{$padding-bottom};
+  &::after {
+    background-color: #{$color};
+  }
+}
+
+
+@mixin center-block {
+  // margin-left: auto !important;
+  // margin-right: auto !important;
+  // display: block !important;
+  @extend .center-block;
+}
+
+.responsiveBackground {
+  background: center top no-repeat fixed;
+  background-size: cover;
+}
+
+
+@mixin responsive-background($padding-bottom: false, $url: false) {
+  // background: center top no-repeat fixed;
+  // background-size: cover;
+  @if $padding-bottom {
+    padding-bottom: #{$padding-bottom};
+  }
+  @if $url {
+    background-image: url('#{$url}');
+  }
+  // @extend .responsiveBackground;
+
+}
+
+.smoothTransitionColor {
+  transition: color 0.5s;
+}
+@mixin smooth-transition-color {
+  @extend .smoothTransitionColor;
+}
+.smoothTranstitionButton {
+  transition: color 0.5s, background-color 0.5s, transform 0.1s; 
+  &:active {
+    transform: translateY(3px);
+  }
+}
+
+@mixin smooth-transition-button($font-color, $background-color) {
+  @extend .smoothTranstitionButton;
+  &:hover {
+    color: #{$font-color};
+    background-color: #{$background-color};
+  }
+}
+
+
+@mixin flexable($flex, $dir_wrap, $content, $align) {
+  display: #{$flex};
+  flex-flow: #{$dir_wrap};
+  justify-content: #{$content};
+  align-items: #{$align};
+}
+/* Body Custom */
+html, body {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  // overflow-x: hidden;
+}
+body {
+  & * {
+    // Styles for testing 
+    // background: #000 !important;
+    // color: #0f0 !important;
+    // outline: solid #f00 1px !important;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: none !important;
+    &:active {
+      outline: 0;
+    }
+    &:focus {
+      outline: 0;
+    }
+    &:hover {
+     text-decoration: none;
+    }
+  }
+  position: relative;
+  font: {
+    family: $stackLora;
+    size: 16px;
+  }
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures contextual;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  line-height: 145%;
+  font-size-adjust: 100%;
+  word-break: break-word;
+  hyphens: auto;
+  -webkit-hyphenate-before: 2;
+  -webkit-hyphenate-after: 3;
+  hyphenate-lines: 3;
+  color: $white;
+}
+button, a {
+  cursor: pointer;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: $white !important;
+  &:hover {
+    color: currentColor !important;
+  }
+  &:visited {
+    color: currentColor !important;
+   
+  }
+  &:active {
+    color: currentColor;
+   
+  }
+  &:focus {
+    color: currentColor;
+  }
+}
+p {
+  margin-bottom: 1em;
+}
+
+// For flexbox.
+.flexbox {
+  
+}
