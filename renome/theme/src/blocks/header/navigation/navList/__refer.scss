@@ -1,0 +1,33 @@
+.navItem__refer {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-size: (21em / 16);
+  color: #fefeff;
+  display: block;
+  transition: border-bottom 0.5s;
+  position: relative;
+  z-index: 0;
+  min-height: 30px;
+  margin: 0 auto;
+  max-width: 127px;
+  @include breakpoint($md-less) {
+   max-width: 106px;
+   font-size: (18em / 16);  
+  }
+  @include breakpoint($xs) {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: $lightRed;
+    transition: width 0.5s;
+  }
+}

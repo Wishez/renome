@@ -1,0 +1,13 @@
+.brand {
+  @include span(3);
+  min-width: 225px;
+  @include breakpoint($md) {
+  	margin-right: 0;
+  }
+  @include breakpoint($sm) {
+  	min-width: 180px;
+  }
+}
+
+
+@import '__name.scss';

@@ -1,0 +1,26 @@
+.choice {
+	@include multy-background('../img/choice.jpg', $lightGray, (350% / 600 * 100), 675px);
+	color: $brown;
+	& .container {
+		padding-top: 20%;
+		@include breakpoint($xs) {
+			padding-top: 30%;
+		}
+		@include breakpoint($xxs) { 
+			padding-top: 45%;
+		}
+	}
+	&__title {
+		@extend .greet__title;
+		color: $brown;
+	}
+	&__title, &__paragraph {
+		@include center-block;
+	}
+	&__title {
+		text-align: center;
+	}
+	&__decorator--color_lightBrown {
+		color: $lightBrown;		
+	}
+}

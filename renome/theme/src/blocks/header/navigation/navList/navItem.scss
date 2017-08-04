@@ -1,0 +1,17 @@
+@import '__refer.scss';
+
+.navItem {
+  width: 25%;
+  @include breakpoint($xs) {
+    width: 100%;
+    text-align: center;
+  }
+  &:hover .navItem__refer::after {
+    width: 100%;
+  }
+  &.active {
+  	& .navItem__refer::after {
+  		width: 100%;
+  	}
+  }
+} 

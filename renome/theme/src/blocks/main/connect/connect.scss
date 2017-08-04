@@ -1,0 +1,163 @@
+.connect {
+	@extend .about__item;
+	@include multy-background('../img/contacts.jpg', $green, (1367% / 2049 * 100), 2049px);
+	margin-top: 0;
+	@include breakpoint($sm-less) {
+		max-height: 1670px;
+	}	
+	& > .container {
+		padding-top: 350px;
+		@include breakpoint($xs) {
+			padding-top: 200px;	
+		}
+		
+	}
+}
+.connectList {
+	padding: 5% 0;
+	margin-top: (250% / 2049 * 100);
+	& span {
+		margin-top: 1em;
+		display: block;
+	}
+}
+.connectList__item {
+	display: inline-block;
+	width: span(6);
+	@include breakpoint($xs) {
+		width: span(12);
+		margin-top: 2em;
+	}
+	& .icon , & span {
+		transition: color 0.2s;
+	}
+	&:hover {
+		& .icon  {
+			color: $yellow;
+			animation: wobble 1s;
+		}
+		& span {
+			color: $lightRed;
+		}
+	}
+}
+
+.connectFormController__item, .connectList__item {
+	font-size: (21em / 16);
+	@include breakpoint($xxs) {
+		font-size: 5vw;
+	}
+}
+
+.connectFormWrapper {
+	margin-top: (350% / 2049 * 100);
+}
+.connectForm {
+	color: $white;
+	@include pretty-xs-sides-paddings;
+}
+.connectFormWrapper__title {
+	font-size: (50em / 16);
+}
+.connectFormController {
+	margin-top: 3em;
+	&:first-child {
+		margin-top: 7em;
+	}
+}
+
+::-webkit-input-placeholder {
+	font-size: (18em / 16);
+	font-style: italic;
+}
+
+.connectFormController__item {
+	width: span(12);
+	padding: 2% 0;
+	background-color: transparent;
+	border-bottom: 2px solid $lightRed;
+	margin: 1em 0 0;
+}
+.connectFormController__item-textarea {
+	width: span(12);
+	max-height: 116px;
+	@include breakpoint($xs) {
+		width: span(8);
+	}
+}
+
+.connectFormController__label, .connectFormController__item, .connectFormController__error {
+	display: block;
+}
+.connectFormController__error, .connectFormController__label {
+	@include breakpoint($xs) {
+		text-align: center
+	}
+}
+
+.connectFormController__label {
+	font-size: (24em / 16);
+	&:after {
+		content: '*';
+		color: $lightRed; 
+	}
+}
+.connectFormController__label, .connectFormController__item {
+	display: block;
+}
+
+.connectFormController__error, .connectList .icon  { 
+	color: $lightRed;
+}
+
+.connectForm__btn {
+  	background-color: $lightRed $i;
+  	
+  	font-size: (26em / 16) $i;
+  	font-weight: bold $i;
+  	padding: 2% $i;
+  	color: $white $i;
+  	display: block $i; 
+	margin: (230% / 2096 * 100) auto 0 $i;
+  	& .send.icon {
+  		border-right: 1px solid $gray;
+  	}
+	
+  	@include breakpoint($xs) {
+		margin-top: 60px $i;
+		font-size: (21em / 16) $i;
+		padding: 4% $i;
+	}
+
+}
+
+
+@keyframes wobble {
+  from {
+    transform: none;
+  }
+
+  15% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    transform: translate3d(5%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    transform: translate3d(-3.75%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    transform: translate3d(2.5%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    transform: translate3d(-1.25%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    transform: none;
+  }
+}

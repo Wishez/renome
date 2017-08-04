@@ -1,7 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f313e8e-28ef-46a3-bd08-67448065ec6d" name="Default" comment="" />
+    <list default="true" id="8f313e8e-28ef-46a3-bd08-67448065ec6d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/gulpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/404.pug" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/Main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/actions/ArticlesActions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/actions/TodoActions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/About.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/AboutItem.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/Connect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/ConnectForm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/Footer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/GroupPatterns.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/Header.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/ListPricesItem.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/Logo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/Main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/MiniOrderButton.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/Navigation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/NotFound.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/OrderForm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/Paragraph.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/Pattern.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/Patterns.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/Prices.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/Services.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/ServicesItem.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/TasksListItem.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/components/Title.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/constants/actionTypes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/constants/crossDomainRequest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/constants/servicesOptions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/custom/custom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/custom/custom.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/footer/contacts/contacts.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/footer/contacts/contactsStock.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/footer/footer.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/header/header.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/header/logo/__name.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/header/logo/logo.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/header/navigation/__openMenuButton.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/header/navigation/navList/__refer.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/header/navigation/navList/navItem.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/header/navigation/navList/navList.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/header/navigation/navigation.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/about/__item.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/about/about.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/about/choice/choice.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/about/greet/greet.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/about/hint/hint.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/about/manage/manage.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/connect/connect.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/main.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/orderForm/orderForm.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/orderForm/success.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/paragraph.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/patterns/patterns.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/prices/listPrices/listPrices.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/prices/listPrices/pricing.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/prices/prices.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/services/bigTitle/bigTitle.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/services/miniOrderButton.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/services/process/process.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/services/process/tasksList/tasksList.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/services/process/tasksList/tasksListItem.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/services/service/service.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/services/services.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/text.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/main/title.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/reducers/articles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/reducers/connect_form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/blocks/store/configureStore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/Lora/Lora-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/Lora/Lora-BoldItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/Lora/Lora-Italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/Lora/Lora-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/fonts.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobal.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobal.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobal.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobal.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobal.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobalb.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobalb.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobalb.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobalb.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobalb.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobalbi.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobalbi.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobalbi.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobalbi.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobalbi.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobali.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobali.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobali.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobali.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/inglobal/inglobali.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/slick.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/slick.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/slick.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/fonts/slick.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/bottom.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/cats/cats_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/cats/cats_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/cats/cats_10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/cats/cats_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/cats/cats_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/cats/cats_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/cats/cats_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/cats/cats_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/cats/cats_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/cats/cats_8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/cats/cats_9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/choice.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/contacts.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/discount.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/discount_mobil.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/flags.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/flags@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/footer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/greet.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/hint.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/icons/conversion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/icons/design.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/icons/explosion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/icons/landing-page.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/icons/online-store.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/icons/portfolio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/icons/support.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/manage.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/middle.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/prices.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/process.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/services.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/img/top.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/index.pug" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/js/jquery.html5support.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/js/modernizr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/js/svg-icons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/js/webslides.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/libs/aos.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/libs/libphonenumber.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/scss/ie-10-up.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/scss/ie9.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/scss/libphonenumber.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/scss/main.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/scss/print.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/renome/media/src/scss/screen.scss" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/renome/app/templates/404.html" afterPath="$PROJECT_DIR$/renome/app/templates/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/renome/app/templates/index.html" afterPath="$PROJECT_DIR$/renome/app/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/renome/app/views.py" afterPath="$PROJECT_DIR$/renome/app/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/renome/renome/settings.py" afterPath="$PROJECT_DIR$/renome/renome/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/renome/renome/urls.py" afterPath="$PROJECT_DIR$/renome/renome/urls.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,12 +175,108 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="custom.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/renome/media/src/blocks/custom/custom.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/renome/renome/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="481">
+              <caret line="136" column="21" lean-forward="false" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/renome/theme/src/index.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/renome/app/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/renome/app/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="35" />
+              <folding>
+                <element signature="e#106#141#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="404.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/renome/theme/src/404.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/renome/theme/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1501830283891" expanded="true" signature="568:1931" ph="{&quot;babel-cli&quot;: &quot;^6.22.2&quot;...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/renome/theme/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="152" column="43" lean-forward="false" selection-start-line="152" selection-start-column="43" selection-end-line="152" selection-end-column="43" />
+              <folding>
+                <marker date="1501830194602" expanded="true" signature="3634:3682" ph="{...}" />
+                <marker date="1501830194602" expanded="true" signature="3690:3713" ph="/*...*/" />
+                <marker date="1501830194602" expanded="true" signature="3714:3745" ph="/*...*/" />
+                <marker date="1501830194602" expanded="true" signature="3771:3875" ph="{...}" />
+                <marker date="1501830194602" expanded="true" signature="3883:3906" ph="/*...*/" />
+                <marker date="1501830194602" expanded="true" signature="3907:3939" ph="/*...*/" />
+                <marker date="1501830194602" expanded="true" signature="3971:4073" ph="{...}" />
+                <marker date="1501830194602" expanded="true" signature="4077:4100" ph="/*...*/" />
+                <marker date="1501830194602" expanded="true" signature="4101:4136" ph="/*...*/" />
+                <marker date="1501830194602" expanded="true" signature="4166:4174" ph="{...}" />
+                <marker date="1501830194602" expanded="true" signature="4224:4359" ph="{&quot;filename&quot;: 'app.manifest'...}" />
+                <marker date="1501830194602" expanded="true" signature="4406:4429" ph="/*...*/" />
+                <marker date="1501830194602" expanded="true" signature="4430:4462" ph="/*...*/" />
+                <marker date="1501830194602" expanded="true" signature="4495:4567" ph="{...}" />
+                <marker date="1501830194602" expanded="true" signature="4572:4595" ph="/*...*/" />
+                <marker date="1501830194602" expanded="true" signature="4596:4633" ph="/*...*/" />
+                <marker date="1501830194602" expanded="true" signature="4738:4755" ph="{...}" />
+                <marker date="1501830194602" expanded="true" signature="4761:4872" ph="{...}" />
+                <marker date="1501830194602" expanded="true" signature="4775:4812" ph="{&quot;baseDir&quot;: settings.build...}" />
+                <marker date="1501830194602" expanded="true" signature="5592:5666" ph="{...}" />
+                <marker date="1501830194602" expanded="true" signature="5672:5757" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/renome/renome/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -24,8 +284,25 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>html</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/renome/app/views.py" />
+        <option value="$PROJECT_DIR$/renome/renome/urls.py" />
+        <option value="$PROJECT_DIR$/renome/renome/settings.py" />
+        <option value="$PROJECT_DIR$/renome/theme/gulpfile.js" />
+        <option value="$PROJECT_DIR$/renome/theme/src/404.pug" />
+        <option value="$PROJECT_DIR$/renome/theme/src/index.pug" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -33,9 +310,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/renome/theme/node_modules" />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="326" />
-    <option name="y" value="127" />
+    <option name="x" value="606" />
+    <option name="y" value="108" />
     <option name="width" value="1170" />
     <option name="height" value="781" />
   </component>
@@ -54,6 +334,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -94,7 +375,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
+              <option name="myItemId" value="theme" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -112,7 +393,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
+              <option name="myItemId" value="theme" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -134,15 +415,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
+              <option name="myItemId" value="renome" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -163,23 +436,50 @@
               <option name="myItemId" value="media" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="renome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renome" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
+              <option name="myItemId" value="renome" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="custom" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,26 +512,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="326" y="127" width="1170" height="781" extended-state="0" />
+    <frame x="606" y="108" width="1170" height="781" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24956672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -248,8 +549,106 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/renome/media/src/blocks/custom/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/renome/media/src/blocks/custom/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/renome/renome/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/renome/renome/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="136" column="21" lean-forward="false" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/renome/theme/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1501830283891" expanded="true" signature="568:1931" ph="{&quot;babel-cli&quot;: &quot;^6.22.2&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/renome/theme/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="152" column="43" lean-forward="false" selection-start-line="152" selection-start-column="43" selection-end-line="152" selection-end-column="43" />
+          <folding>
+            <marker date="1501830194602" expanded="true" signature="3634:3682" ph="{...}" />
+            <marker date="1501830194602" expanded="true" signature="3690:3713" ph="/*...*/" />
+            <marker date="1501830194602" expanded="true" signature="3714:3745" ph="/*...*/" />
+            <marker date="1501830194602" expanded="true" signature="3771:3875" ph="{...}" />
+            <marker date="1501830194602" expanded="true" signature="3883:3906" ph="/*...*/" />
+            <marker date="1501830194602" expanded="true" signature="3907:3939" ph="/*...*/" />
+            <marker date="1501830194602" expanded="true" signature="3971:4073" ph="{...}" />
+            <marker date="1501830194602" expanded="true" signature="4077:4100" ph="/*...*/" />
+            <marker date="1501830194602" expanded="true" signature="4101:4136" ph="/*...*/" />
+            <marker date="1501830194602" expanded="true" signature="4166:4174" ph="{...}" />
+            <marker date="1501830194602" expanded="true" signature="4224:4359" ph="{&quot;filename&quot;: 'app.manifest'...}" />
+            <marker date="1501830194602" expanded="true" signature="4406:4429" ph="/*...*/" />
+            <marker date="1501830194602" expanded="true" signature="4430:4462" ph="/*...*/" />
+            <marker date="1501830194602" expanded="true" signature="4495:4567" ph="{...}" />
+            <marker date="1501830194602" expanded="true" signature="4572:4595" ph="/*...*/" />
+            <marker date="1501830194602" expanded="true" signature="4596:4633" ph="/*...*/" />
+            <marker date="1501830194602" expanded="true" signature="4738:4755" ph="{...}" />
+            <marker date="1501830194602" expanded="true" signature="4761:4872" ph="{...}" />
+            <marker date="1501830194602" expanded="true" signature="4775:4812" ph="{&quot;baseDir&quot;: settings.build...}" />
+            <marker date="1501830194602" expanded="true" signature="5592:5666" ph="{...}" />
+            <marker date="1501830194602" expanded="true" signature="5672:5757" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/renome/app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="e#106#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/renome/theme/src/404.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/renome/theme/src/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/renome/app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

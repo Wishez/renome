@@ -1,0 +1,25 @@
+.header {
+  margin-top: 55px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  @include breakpoint($xs) {
+    margin-top: 0;
+    position: fixed;
+
+    
+  }
+}
+
+
+ 
+
+@import 'logo/logo.scss';
+@import 'navigation/navigation.scss';
+.header, .navigation, .navList, .brand {
+  @include breakpoint($xs) {
+    width: 100vw;  
+  }
+}

@@ -1,0 +1,35 @@
+| {% load static %}
+doctype
+html.no-js(lang="ru", manifest="{% static '/renome/app.manifest' %}")
+  head
+    meta(charset="UTF-8")
+    meta(
+      name="viewport",
+      content="width=device-width, initial-scale=1.0"
+    )
+    meta(
+      http-equive="X-UA-Compatible",
+      content="IE=edge"
+    )
+    title Renome
+  body
+    #root
+
+    script(async, src="{% static '/renome/js/main.js' %}")
+    link(rel="stylesheet",
+         href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css",
+         media='none',
+         onload='if (media == "none") media = "all"'
+    )
+    link(
+      rel="stylesheet",
+      href="{% static '/renome/css/main.css' %}",
+      media='none',
+      onload='if (media == "none") media = "all"'
+    )
+    link(
+      rel="stylesheet",
+      href="{% static '/renome/css/ie-10-up.css' %}",
+      media='none',
+      onload='if (media == "none") media = "all"'
+    )

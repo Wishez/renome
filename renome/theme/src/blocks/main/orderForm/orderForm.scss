@@ -1,0 +1,227 @@
+.orderFormWrapper, .orderForm {
+	border-style: solid;
+	border-width: 5px;
+}
+.orderFormWrapper {
+	display: none;
+	border-radius: 5px;
+	position: fixed;
+	z-index: 3;
+	border-color: $darkGray;
+	left: 50%;
+	top: 0;
+	max-width: 500px;
+	width: 100%;
+	margin-left: -250px;
+	@include breakpoint($sm-up) {
+		top: 50%;
+		margin-top: -320px;
+	}
+	@include breakpoint($xs) {
+		width: 100vw;
+	}
+	@include breakpoint($xxs) {
+		margin-left: auto;
+		left: 0;
+		height: 100vh;
+		position: fixed;
+
+	}
+	& > .fa-close {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		color: $darkGray;
+		cursor: pointer;
+		@include smooth-transition-color;
+
+		&:hover {
+			color: lighten($darkGray, 10%);
+		}
+
+	}
+}
+
+.orderForm {
+	border-color: $lightRed;
+	background-color: $darkBlue;
+	
+	height: 100%;
+	padding-bottom: 20px;
+  	@include breakpoint($xxs) {
+  		padding: 30px 0;
+		
+	}
+	@include breakpoint($xxs-iphone) {
+  		padding: 0 0 10px;
+		
+	}
+	& ::-webkit-input-placeholder {
+		color: #5e5e5e;
+		font-style: italic;
+	}
+	& ::-moz-placeholder {
+		color: #5e5e5e;
+		font-style: italic;
+	}
+	& :-ms-input-placeholder {
+		color: #5e5e5e;
+		font-style: italic;
+	}
+	&__title {
+		font-size: (30em / 16);
+		font-weight: bold;
+		margin: 0.6em 0 1.2em !important ;
+	}
+	&__btn {
+	  	background-color: darken($darkBlue, 15%);
+	  	margin-top: 1.5em;
+	  	font-size: (21em / 16);
+	  	font-weight: bold;
+	  	@include center-block;
+	  	@include smooth-transition-color;
+	  	$darkenDarkBlue: darken($darkBlue, 5%);
+	  	@include smooth-transition-button($whiteOrange, $darkenDarkBlue);
+	  	&:focus {
+	  		color: currentColor;
+	  		outline: 0;
+	  	}
+	}
+}
+.orderFormController {
+	position: relative;
+	& .fa {
+		position: absolute;
+		top: 5px;
+		left: auto;
+		right: 2.5em;
+		color: $darkGray;
+		font-size: 25px;
+		@include breakpoint($xxs) {
+			right: 1.9em;
+		}
+		@include breakpoint($xxs-iphone) {
+			font-size: 20px;
+			top: 11px;
+			right: 2.2em;
+		}
+	}
+	&:nth-child(3) .fa, &:nth-child(2) .fa {
+		right: 2.6em;
+		top: 6px;
+		@include breakpoint($xxs) {
+			right: 2.1em;
+		}
+		@include breakpoint($xxs-iphone) {
+			top: 12px;
+			right: 2.3em;
+		}
+	}
+	&__label, &__item, &__error{
+		display: block $i;
+	}
+	&__item, &__error, &__label{
+		margin-top: 0.5em;
+	}
+	&__label, &__error {
+		text-align: center !important;
+	}
+	&__label {
+		font-size: (18em / 16);
+		&::after {
+			content: '*';
+			color: #000;
+
+		}
+	}
+	&__error {
+		font-size: (13em / 16);
+	}
+	&__item {
+		color: $darkGray;
+		border-radius: 15px !important;
+		font-size: (14em / 16) !important;
+		height: 35px ;
+		padding: 1% 12% 1% 2%;
+		background-color: #c7c2c6 !important;
+		@include center-block;
+		@include breakpoint($xxs-iphone) { 
+			font-size: (12em / 16);
+		}
+		&--type_select {
+			line-height: 0.9em !important;
+			min-height: 30px !important;
+			padding: 0.8em 0.3em !important;
+
+		}
+		&--type_textarea {
+		}
+		& .dropdown.icon {
+			top: 26px !important;
+			right: 1em !important;
+			padding: 0 !important;
+			font-size: 45px !important;
+			@include breakpoint($xxs) {
+				right: 1.2em;
+			}
+			@include breakpoint($xxs-iphone) {
+				top: 28px !important;
+				right: 1.1em !important;
+				font-size: 40px !important;
+			}
+		}
+		& .default.text {
+			color:  #5e5e5e !important;
+		} 
+		& .text, & .default.text {
+			margin: 0;
+		}
+	}
+	
+}
+
+.inputContainer {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 1px;
+
+		background-color: #9c979b;
+		z-index: 1;
+		right: 6em;
+		@include breakpoint($xxs) {
+			right: 5em;
+		}
+		@include breakpoint($xxs-iphone) {
+			right: 4.7em;
+		}
+	}
+}
+
+.orderFormController__item--type_select {
+	&:before {
+		right: 14%;
+	}
+}
+.orderFormController__item, .country-list, .intl-tel-input  {
+	max-width: 382px !important;
+	width: 80%;
+}
+.intl-tel-input {
+	@include center-block;
+	margin-top: 0.5em;
+
+}
+.from-control {
+	@extend .orderFormController__item;
+	width: 100%;
+	
+}
+.country-list {
+	background-color: $darkGray !important;
+}
+
+@import 'success.scss';

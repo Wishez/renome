@@ -8,6 +8,8 @@ from django.shortcuts import render
 from .models import *
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
+from django.core.mail import EmailMessage
+
 # Create your views here.
 def index(request):
     template = 'index.html'
@@ -25,8 +27,10 @@ def order(request):
                       service=data['service'],
                       comment=data['comment']
                 )
-
         order.save()
+
+        orderMsg = '%s\n%s\n%s\n%s\n%s' % (data['name'], data['email'], data['service'], data['phone'], data['comment'])
+        EmailMessage('web-renome.ru Order', orderMsg, to=['shiningfinger@list.ru']).send()
 
         respond = '<div class="text-center success"><h2 class=" success__title title">До связи!</h2><p class="success__paragraph paragraph">Скоро мы свяжимся с вами.</p>'
 
@@ -40,8 +44,9 @@ def message(request):
                       email=data['email'],
                       message=data['message']
                 )
-
         message.save()
+        orderMsg = '%s\n%s\n%s' % (data['name'], data['email'], data['message'])
+        EmailMessage('web-renome.ru Message', orderMsg, to=['shiningfinger@list.ru']).send()
 
         respond = '<div class="successfulyConnect text-center" style="margin-top: 10em;"> \
                   <h2 class="successfulyConnect__title title" style="font-size: 2.5em;">Связь установленна!</h2> \

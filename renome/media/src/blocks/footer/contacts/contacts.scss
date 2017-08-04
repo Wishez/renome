@@ -1,7 +1,0 @@
-.contacts {
-	@include breakpoint($xs) {
-		margin-top: 85px;
-	}
-}
-
-@import 'contactsStock.scss';

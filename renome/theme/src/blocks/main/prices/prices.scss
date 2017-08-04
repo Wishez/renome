@@ -1,0 +1,33 @@
+
+.prices {
+	@include responsive-background;
+	@include multy-background('../img/prices.jpg', $gray, (318% / 1820 * 100), 1820px );
+	@extend .about__item;
+	padding-top: 27%;
+	@include breakpoint($xs) {
+		max-height: none;
+
+	}
+	@include breakpoint($lg) {
+		max-height: 2000px;
+		padding-top: 350px;
+	}
+}	
+
+.prices__title {
+	@extend .process__title;
+	text-center: inherit;
+}
+
+.prices__discount {
+	max-height: 1282px; 
+	& figure {
+		@include responsive-background(100%, '../img/discount.png');
+		@include breakpoint($xs) {
+			@include responsive-background(false, '../img/discount_mobil.png');
+		}
+		background-attachment: scroll !important;
+		
+	}
+}
+@import 'listPrices/listPrices.scss';
