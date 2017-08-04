@@ -89,23 +89,23 @@ export default class Services extends Component {
 						<ul className='tasksList'>
 							<li>
 								<TasksListItem 
-									icon='battery-empty'
+									icon='battery empty'
 									title='Техническое задание(ТЗ)'
 									text='&thinsp;&mdash;&thinsp;описывает какие задачи требуется выполнить 
-и в какие сроки они будут выполнены.'
+									и в какие сроки они будут выполнены.'
 								/>
 							</li>
 							<li>
 								<TasksListItem 
-									icon='battery-quarter'
+									icon='battery low'
 									title='Разработка дизайна'
 									text='&thinsp;&mdash;&thinsp;построение внешнего вида сайта, адаптированным 
-под стиль вашей фирмы.'
+									под стиль вашей фирмы.'
 								/>
 							</li>
 							<li>
 								<TasksListItem 
-									icon='battery-half'
+									icon='battery medium'
 									title='Адаптивная вёрстка '
 									text='&thinsp;&mdash;&thinsp;реализация макетов для стационарных, планшетных 
 и мобильных устройств.'
@@ -113,22 +113,21 @@ export default class Services extends Component {
 							</li>
 							<li>
 								<TasksListItem 
-									icon='battery-three-quarters'
+									icon='battery high'
 									title='Интеграция вёрстки на <strong>Django</strong>'
 									text='&thinsp;&mdash;&thinsp;управление содержимым сайта с помощью
-панели управления.'
+									панели управления.'
 								/>
 							</li>
 							<li>
 								<TasksListItem 
-									icon='battery-full'
+									icon='battery full'
 									title='Тестирование'
 									text='&thinsp;&mdash;&thinsp;проверка всей функциональности вашего сайта.'
 								/>
 							</li>
 							<li>
 								<TasksListItem 
-									
 									title='Настройка сервера'
 									text='&thinsp;&mdash;&thinsp;то место, куда будут приходить пользователи.'
 								/>

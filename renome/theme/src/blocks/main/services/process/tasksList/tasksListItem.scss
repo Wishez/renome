@@ -1,11 +1,3 @@
-.tasksListItem {
-}
-
-
-.tasksListItem__title {
-
-}
-
 .tasksListItem__paragraph {
 	width: 100%;
 	margin-right: 0;
@@ -24,6 +16,7 @@
 
 .tasksListItem__icon {
 	margin-right: 27px;
+	width: 2.18em $i;
 	@include breakpoint($xs) {
 		margin-right: 15px;
 	}
@@ -45,5 +38,5 @@
 }
 
 .tasksListItem__icon, .tasksListItem__title {
-	color: $orange;
+	color: $orange $i;
 }

@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
-import Paragraph from './Paragraph';
+import { Icon } from 'semantic-ui-react';
+import ReactHtmlParser from 'react-html-parser';
 
-export default class TasksListItem extends Component {
-	render() {
-		const { icon, title, text } = this.props;
-		const isIcon = icon ? `<i class='tasksListItem__icon fa fa-${icon}'></i>` : '';
-		return (
-			<div className='tasksListItem' data-aos='fade-right'> 
-				<Paragraph 
-					block='tasksListItem'
-					text={`${isIcon}<span class='tasksListItem__title'>${title}</span>${text}`} 
-				/>
-			</div>
-		);
-	}
-}
+const TasksListItem = ({ 
+	icon,
+	title,
+	text
+}) => (
+		<div className='tasksListItem' data-aos='fade-right'> 
+			<p className='tasksListItem__paragraph paragraph'>
+				{icon ? 
+					<Icon name={icon} 
+						className='tasksListItem__icon'
+						size='small' /> : ''}
+				<span className='tasksListItem__title'>&thinsp;{ReactHtmlParser(title)}</span>
+				{ReactHtmlParser(text)}
+			</p>
+		</div>
+	);
+
+export default TasksListItem;
