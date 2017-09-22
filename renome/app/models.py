@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
+from django.conf import settings
+if not settings.DEBUG:
+    import sys
+    reload(sys)
+    sys.setdefaultencoding('utf-8')
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from django.utils.encoding import python_2_unicode_compatible
-import sys
 
 @python_2_unicode_compatible
 class Order(models.Model):
