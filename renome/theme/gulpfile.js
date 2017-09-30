@@ -46,8 +46,7 @@ const settings = {
       scssPathes = ['node_modules/susy/sass', 
                     'node_modules/breakpoint-sass/stylesheets',
                    'node_modules/bootstrap-sass/assets/stylesheets',
-                   'node_modules/font-awesome-sass/assets/stylesheets/',
-                   'node_modules/webslides/static/css/'];
+                   'node_modules/font-awesome-sass/assets/stylesheets/'];
 
 
 /* ----------------- */
@@ -55,6 +54,8 @@ const settings = {
 /* ----------------- */
 
 gulp.task('js', () => {
+  process.env.NODE_ENV = 'development';
+
   return browserify({
       transform: ['hbsfy'],
       entries: settings.src + '/js/main.js',
@@ -78,6 +79,8 @@ gulp.task('js', () => {
 
 
 gulp.task('jsmin', () => {
+  process.env.NODE_ENV = 'production';
+
   return browserify({
       transform: ['hbsfy', 'envify'],
       entries: settings.src + '/js/main.js',
@@ -94,9 +97,9 @@ gulp.task('jsmin', () => {
     .bundle()
     .pipe(source('main.js'))
     .pipe(buffer())
+    .pipe(sourcemaps.init())
     .pipe(uglify()).on('error', gutil.log)
-    //.pipe(sourcemaps.init({ loadMaps: false }))
-    //.pipe(sourcemaps.write('.'))
+    .pipe(sourcemaps.write('.'))    
     .pipe(gulp.dest(settings.build + '/js'));
 });
 
@@ -115,7 +118,7 @@ gulp.task('scss', () => {
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(settings.build + '/css'))
     .pipe(browserSync.stream());
 });
@@ -127,6 +130,7 @@ gulp.task('css', () => {
       includePaths: scssPathes
     }).on('error', sass.logError))
     .pipe(autoprefixer())
+    .pipe(sourcemaps.write('.'))
     .pipe(cleanCSS())
     .pipe(gulp.dest(settings.build + '/css'));
 });
@@ -142,6 +146,10 @@ gulp.task('images', () => {
     .pipe(gulp.dest(settings.build + '/img'));
 });
 
+gulp.task('fastimages', () => {
+  return gulp.src(settings.src + '/img/*')
+    .pipe(gulp.dest(settings.build + '/img'));
+});
 
 /* ----------------- */
 /* HTML
@@ -158,11 +166,13 @@ gulp.task('html', () => {
 /* Fonts
 /* ----------------- */
 
-gulp.task('fonts', function() {
+gulp.task('fonts', () => {
   return gulp.src(settings.src + '/fonts/**/*.*')
     .pipe(gulp.dest(settings.build + '/fonts'));
 });
 
+gulp.task('fastmedia', ['fonts', 'fastimages']);
+gulp.task('media', ['fonts', 'images'])
 /* ----------------- */
 /* CacheApp
 /* ----------------- */
@@ -193,30 +203,14 @@ gulp.task('clean', function () {
 /* ----------------- */
 /* Predefined
 /* ----------------- */
-gulp.task('bundle', ['js', 'scss', 'images', 'html', 'fonts']);
+gulp.task('bundle', ['js', 'scss', 'fastmedia', 'html', 'fonts']);
 
 gulp.task('default', ['bundle'], () => {
-    browserSync.init({
-    server: {
-      baseDir: settings.build
-    },
-    open: false,
-    port: 9000,
-    reloadDelay: 2200
-  });
-
-  gulp.watch(settings.src + '/**/*.scss', ['scss']).on('change', browserSync.reload);
-  gulp.watch(settings.src + '/img/**/*.*', ['images']).on('change', browserSync.reload);
-  gulp.watch(settings.src + '/**/*.pug', ['html']).on('change', browserSync.reload);
-  gulp.watch(settings.src + '/**/*.js', ['js']).on('change', browserSync.reload);
+  gulp.watch(settings.src + '/**/*.scss', ['scss']);
+  gulp.watch(settings.src + '/img/**/*.*', ['images']);
+  gulp.watch(settings.src + '/**/*.pug', ['html']);
+  gulp.watch(settings.src + '/**/*.js', ['js']);
   //gulp.watch('./**/*', []).on('change', browserSync.reload);
 });  // development
-gulp.task('deploy', ['jsmin', 'html', 'css',  'images', 'fonts', 'manifest'], () => { // 'html', 'css',  'images', 'fonts', 'manifest'
-    process.stdout.write("Setting NODE_ENV to 'production'" + "\n");
-    process.env.NODE_ENV = 'production';
-    if (process.env.NODE_ENV != 'production') {
-      throw new Error("Failed to set NODE_ENV to production!!!!");
-    } else {
-      process.stdout.write("Successfully set NODE_ENV to production" + "\n");
-    }
-});  // production
+
+gulp.task('deploy', ['jsmin', 'html', 'css', 'media', 'manifest']);

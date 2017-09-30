@@ -20,5 +20,6 @@ import './modernizr.min.js';
   CUSTOM
 
 ***********/
+import './logo.js';
 import './../blocks/Main.js'; 	
 import './../blocks/custom/custom.js';

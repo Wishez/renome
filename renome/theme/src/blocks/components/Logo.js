@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-export default class Header extends Component {
+export default class Logo extends Component {
   render() {
     return (
       <div className='brand'>
-        <a id='brand' 
+        <Link
            className='brand__refer' 
-           href="#">
-          <h1 className='brand__name'>  
-            RENOME
-          </h1>
-        </a>
+           to='/'>
+          <canvas id='brand'></canvas>
+        </Link>
       </div>
     );
   }

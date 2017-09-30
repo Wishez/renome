@@ -11,12 +11,15 @@ $(window).resize(() => {
 });
 
 
-
 $(function() {
   AOS.init({
     duration: 1500
   });
-
+  $.LOGO.setSettings({
+    height: 150,
+    width: 250
+  })
+  $.LOGO.bindCanvas('#brand');
   $('.curtain').fadeOut('fast').remove()
   
   $(document).on('click', '.not-follow', openUrlInNewWindow);
