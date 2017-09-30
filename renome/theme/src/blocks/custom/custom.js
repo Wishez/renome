@@ -10,27 +10,15 @@ $(window).resize(() => {
     navListStyle.display = 'none';
 });
 
+
+
 $(function() {
   AOS.init({
     duration: 1500
   });
 
-  $(document).on('focus', '.orderFormController__item, #phone', (e) =>  {
-    // const screenW  = window.innerWidth,
-    //       screenH = window.innerHeight,
-    //       orderForm = $('.orderForm'),
-    //       inputOffsets =  $(e.target).offset();
-    //       inputOffsetT = inputOffsets.top.
-    //       inputOffsetL = inputOffsets.left;
-
-        
-    // if (screenW < 800 &&
-    //    screrenH - inputOffsetsT < screenH - (screenH / 2)) {
-        
-    // }
-    
-  });
-
+  $('.curtain').fadeOut('fast').remove()
+  
   $(document).on('click', '.not-follow', openUrlInNewWindow);
 
   function openUrlInNewWindow(e) {
