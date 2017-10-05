@@ -52,27 +52,27 @@ class Message(models.Model):
 @python_2_unicode_compatible
 class PatternGroup(models.Model):
     block = models.CharField(_('Блок'), max_length=100)
-    background = models.FileField(_('Фон'),
+    background = models.ImageField(_('Фон'),
                                   upload_to='patterns/backgrounds/',
                                   null = True,
                                   blank = True
     )
-    img_1 = models.FileField(_('Изображение Шаблона'),
+    img_1 = models.ImageField(_('Изображение Шаблона'),
                              upload_to='patterns/',
                              null=True,
                              blank=True
     )
-    img_2 = models.FileField(_('Изображение Шаблона'),
+    img_2 = models.ImageField(_('Изображение Шаблона'),
                              upload_to='patterns/',
                              null=True,
                              blank=True
                              )
-    img_3 = models.FileField(_('Изображение Шаблона'),
+    img_3 = models.ImageField(_('Изображение Шаблона'),
                              upload_to='patterns/',
                              null=True,
                              blank=True
                              )
-    img_4 = models.FileField(_('Изображение Шаблона'),
+    img_4 = models.ImageField(_('Изображение Шаблона'),
                              upload_to='patterns/',
                              null=True,
                              blank=True

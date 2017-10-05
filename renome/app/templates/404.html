@@ -1,10 +1,21 @@
-{% load static %}<!DOCTYPE html><html class="no-js" lang="ru" manifest="{% static '/renome/app.manifest' %}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equive="X-UA-Compatible" content="IE=edge"><title>Renome</title><style>.sk-wandering-cubes {
+{% load static %}<!DOCTYPE html><html class="no-js" lang="ru" manifest="{% static '/renome/app.manifest' %}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Веб-студия зовущая себя &quot;Renome&quot;, создающая производительные, недорогие сайты на основе ReactJS и Django."><meta http-equive="X-UA-Compatible" content="IE=edge"><title>Renome</title><style>.curtain {
+  background-color: #7e2843;
+  padding-top: 45vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sk-wandering-cubes {
   margin: 40px auto;
   width: 40px;
   height: 40px;
-  position: relative; }
+  position: relative; 
+}
   .sk-wandering-cubes .sk-cube {
-    background-color: #7e2843;
+    background-color: #fefeff;
     width: 10px;
     height: 10px;
     position: absolute;
@@ -56,7 +67,7 @@
             transform: translateX(0) translateY(30px) rotate(-270deg) scale(0.5); }
   100% {
     -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg); } }</style></head><body><div id="root"></div><script async src="{% static '/renome/js/main.js' %}"></script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css" media="none" onload="if (media == &quot;none&quot;) media = &quot;all&quot;"><link rel="stylesheet" href="{% static '/renome/css/main.css' %}" media="none" onload="if (media == &quot;none&quot;) media = &quot;all&quot;"><link rel="stylesheet" href="{% static '/renome/css/ie-10-up.css' %}" media="none" onload="if (media == &quot;none&quot;) media = &quot;all&quot;"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-103835197-4"></script><script>window.dataLayer = window.dataLayer || [];
+            transform: rotate(-360deg); } }</style></head><body><div class="curtain"><div class="sk-wandering-cubes"><div class="sk-cube sk-cube1"></div><div class="sk-cube sk-cube2"></div></div></div><div id="root"> </div><script async src="{% static '/renome/js/main.js' %}"></script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css" media="none" onload="if (media == &quot;none&quot;) media = &quot;all&quot;"><link rel="stylesheet" href="{% static '/renome/css/main.css' %}" media="none" onload="if (media == &quot;none&quot;) media = &quot;all&quot;"><link rel="stylesheet" href="{% static '/renome/css/ie-10-up.css' %}" media="none" onload="if (media == &quot;none&quot;) media = &quot;all&quot;"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-103835197-4"></script><script>window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments)};
 gtag('js', new Date());
 
