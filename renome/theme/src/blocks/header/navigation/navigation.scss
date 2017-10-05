@@ -1,4 +1,4 @@
-.navigaton {
+.navigation {
   @include span(last 9);
   margin-top: (15% / 265) * 100;
   @include breakpoint($sm) {
@@ -8,13 +8,15 @@
   
 }
 
-.navigation, .brand {
+.navigation {
   @include breakpoint($xs) {
     position: fixed;
     top: 0;
     left: 0; 
     margin: 0;
     height: 44px;
+    background-color: $lightRed;
+    z-index: -1;
   }
   
 }

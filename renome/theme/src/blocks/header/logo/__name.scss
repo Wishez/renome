@@ -8,13 +8,8 @@
   text-align: center;
   padding: (30% / 157 * 100) (17% / 285 * 100);
   background-color: $lightRed;
-  @include breakpoint($md-less) {
-    font-size: (36em / 16);
-  }
-  @include breakpoint($xs) {
-    padding: 0.5% 0;
-  }
-  @include breakpoint($sm) {
-    font-size: (30em / 16);
-  }
+}
+
+#brand {
+ 
 }

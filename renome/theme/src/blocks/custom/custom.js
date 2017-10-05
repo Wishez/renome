@@ -4,19 +4,31 @@ $(window).resize(() => {
   let $navList = $('#navList'),
       navListStyle = $navList[0].style;
   
-  if (window.innerWidth > 800) 
+  if (window.innerWidth > 800) {
     navListStyle.display = 'inline-flex';
-  else  
+  } else  {
     navListStyle.display = 'none';
+    // $.LOGO.setSettings({
+    //   font: 'bold 30px Lora'
+    // });
+  }
 });
 
+// $(window).scroll(function(e) {
+//   const fromTop = $(this).scrollTop();
+//   let $brand = $('.brand');
+//   if (fromTop > 100 && this.innerWidth <= 800)
+//     $brand.css('opacity', '0');
+//   else
+//     $brand.css('opacity', '1');
+// });
 
 $(function() {
   AOS.init({
     duration: 1500
   });
   $.LOGO.setSettings({
-    height: 150,
+    height: 200,
     width: 250
   })
   $.LOGO.bindCanvas('#brand');
@@ -40,7 +52,6 @@ $(function() {
   $(document).on('click', '.navItem__refer', (e) => {
     if (window.innerWidth  < 767)
       $('#navList').hide('fast');
-
   }); // end click
 
   $(document).on('click', '.makeOrder', (e) => {
@@ -54,5 +65,4 @@ $(function() {
     else if ($(e.target).is('#closeOrderForm'))
       $formWrapper.hide('fast');
   });
-
 });// end ready

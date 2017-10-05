@@ -8,7 +8,6 @@
   @include breakpoint($xs) {
     margin-top: 0;
     position: fixed;
-
     
   }
 }
@@ -20,6 +19,6 @@
 @import 'navigation/navigation.scss';
 .header, .navigation, .navList, .brand {
   @include breakpoint($xs) {
-    width: 100vw;  
+    width: 100%;  
   }
 }

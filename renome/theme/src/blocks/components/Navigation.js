@@ -79,7 +79,7 @@ export default class Navigation extends Component {
     const { activeAbout, activeServices, activeConnect, activePrices } = this.state;
 
     return (
-        <nav className='navigaton'>
+        <nav className='navigation'>
           <button id='openMenuButton'
             className='navigation__openMenuButton visible-xs'
             onClick={this.openMenu}>

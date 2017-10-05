@@ -23,25 +23,21 @@ const LOGO = (function(that, $) {
   let _c = {};
   
   // Default proportions of a canvas and positions of a trapezoid.
-  let _settings = that.settings = {
-      height: 225,
-      width: 300,
+  let _settings = {
+      height: 200,
+      width: 250,
       class: '',
       font: 'bold 56px Lora',
       colors: {
         FIRST: '#7e2843',
         SECOND: '#F0C74D',
-        THIRD: '#183C66'
+        THIRD: '#49628b',
+        fontColor: '#f1f1f1'
       }
   };
-  that.setSettings = settings => {
-    that.settings = {
-      ..._settings,
-      ...settings
-    }
-  }
 
-  const _CENTER = _settings.width / 2;
+
+  let _CENTER = that.CENTER = _settings.width / 2;
   const _xBoxPos = 0;
   const _yBoxPos = 60;
   
@@ -65,7 +61,7 @@ const LOGO = (function(that, $) {
     left: _CENTER - 10
   }
   // Dynamic positions
-  let _pupilXpos = _CENTER + 10;
+  let _pupilXpos = _CENTER;
   let _pupilYpos = _centerPupilHorizontalLine;
   
   
@@ -88,10 +84,10 @@ const LOGO = (function(that, $) {
       _c.lineTo(_xBoxPos, _yBoxPos);  
     });
   }
-  const _drawName = () => {
-    _c.font = _settings.font;
-    _c.fillStyle = _settings.colors.THIRD;
-    _c.fillText('Renome', 40, 46);
+  const _drawName = (font) => {
+    _c.font = font;
+    _c.fillStyle = _settings.colors.fontColor;
+    _c.fillText('Renome', 25, 46);
   }
 
   const _drawMast = () => {
@@ -114,14 +110,14 @@ const LOGO = (function(that, $) {
   // Variables are for definition of a waves' amplitude.
   const _drawSea = () => {
     // Breakpoints
-    const leftEdge = _xBoxPos + 14.5;
-    const rightEdge = _settings.width - 14.5;
+    const leftEdge = _xBoxPos + 16;
+    const rightEdge = _settings.width - 16;
     const secondBreakpoint = leftEdge + 66;
     const thirdBreakpoint = _settings.width - 66;
     // Direction constants
-    const toTop = 85;
-    const toBottom = 45;
-    const toCenter = 65;
+    const toTop = 65;
+    const toBottom = 35;
+    const toCenter = 50;
 
     _newStep(_settings.colors.THIRD, () => {
         _c.moveTo(_xBoxPos + 25, _settings.height);
@@ -169,34 +165,40 @@ const LOGO = (function(that, $) {
    };
   
   const _drawPupil = (x, y) => {
-    // if (CENTER, _yBoxPos + 50
     _newStep(_settings.colors.THIRD, () => {
       _c.arc(x, y, 10, 0 , 2 * Math.PI);
     });
   };
-  
+  let _animateId;
   const _drawLogo = () => {
-    _drawBox();
-    _drawMast();
-    _drawEye();
-    _drawSea();
-    _drawPupil(_pupilXpos, _pupilYpos);
+    if (window.innerWidth <= 800) {
+      // window.cancelAnimationFrame(_animateId);
+    } else {
+      _drawBox();
+      _drawMast();
+      _drawSea();
+      _drawEye();
+      _drawPupil(_pupilXpos + 10, _pupilYpos);
+      if (!amimateId)
+        _animateId = window.requestAnimationFrame(_animateCanvas);
+    } 
   };
   const _animateCanvas = () => {
     requestAnimationFrame(_animateCanvas)
-    _c.clearRect(_xBoxPos, _yBoxPos, _settings.width, _settings.height - _yBoxPos)
+    _c.clearRect(0, _yBoxPos, _settings.width, _settings.height)
     _drawLogo();
   }
   
- 
   
    that.bindCanvas = (selector) => {
       _canvas = document.querySelector(selector);
       _canvas.height = _settings.height;
       _canvas.width = _settings.width;
+      _canvas.style.width = '100%';
       _c = _canvas.getContext('2d');
-      _drawName();
-      _animateCanvas();
+      _drawName(_settings.font);
+      _animateId = window.requestAnimationFrame(_animateCanvas);
+      
      
      //  window.addEventListener('mousemove', (e) => {
      //    // console.log(e.target === _canvas);
@@ -216,7 +218,27 @@ const LOGO = (function(that, $) {
  
      // });
    }
-    
+   // document.addEventListener('resize', '')
+
+   that.setSettings = settings => {
+      if (typeof settings !== 'object')
+        throw Error("The first argument \"settins\" isn't an object.");
+
+      if (settings.hasOwnProperty('colors'))
+        _settings = {
+          ..._settings,
+          ...settings,
+          colors: {
+            ..._settings.colors,
+            ...settings.colors
+          }
+        }
+      else
+        _settings = {
+          ..._settings,
+          ...settings
+        }
+  }
   
   $.LOGO = that;
 }((LOGO || {}), (jQuery || {})));
