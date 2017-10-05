@@ -12,7 +12,8 @@ export default class Navigation extends Component {
         activAbout: false,
         activeServices: false,
         activeConnect: false,
-        activePrices: false
+        activePrices: false,
+        activePatterns: false
     };
 
     this.getActiveClass = this.getActiveClass.bind(this);
@@ -21,7 +22,9 @@ export default class Navigation extends Component {
     this.changeActiveAbout = this.changeActiveAbout.bind(this);
     this.changeActiveConnect = this.changeActiveConnect.bind(this);
     this.changeActivePrices = this.changeActivePrices.bind(this);
-    this.cleanActiveState = this.cleanActiveState.bind(this);
+    this.activeNewState = this.activeNewState.bind(this);
+    this.changeActivePatterns = this.changeActivePatterns.bind(this);
+    
   }
   
   openMenu() {
@@ -36,36 +39,34 @@ export default class Navigation extends Component {
     }
   }
 
-  cleanActiveState() {
+  activeNewState(state) {
     this.setState({
       activeAbout: false,
       activeServices: false,
       activeConnect: false,
-      activePrices: false
+      activePrices: false,
+      activePatterns: false
     });
 
+    this.setState(state);
   }
 
   changeActiveAbout() {
-    this.cleanActiveState();
-
-    this.setState({activeAbout: true});
+    this.activeNewState({activeAbout: true});
   }
   changeActiveServices() {
-    this.cleanActiveState();
-
-    this.setState({activeServices: true});
+   this.activeNewState({activeServices: true});
   }
   changeActiveConnect() {
-    this.cleanActiveState();
-
-    this.setState({activeConnect: true});
+    this.activeNewState({activeConnect: true});
 
   }
   changeActivePrices() {
-    this.cleanActiveState();
+    this.activeNewState({activePrices: true});
 
-    this.setState({activePrices: true});
+  }
+  changeActivePatterns() {
+    this.activeNewState({activePatterns: true});
 
   }
 
@@ -76,7 +77,7 @@ export default class Navigation extends Component {
    
   render() {
 
-    const { activeAbout, activeServices, activeConnect, activePrices } = this.state;
+    const { activeAbout, activeServices, activeConnect, activePrices, activePatterns } = this.state;
 
     return (
         <nav className='navigation'>
@@ -90,7 +91,6 @@ export default class Navigation extends Component {
           </button>
           <ul className='navList'
               id='navList'>
-            
             <li className={this.getActiveClass(activeAbout)}>
               <Link to='/'
                 className='navItem__refer'
@@ -98,7 +98,7 @@ export default class Navigation extends Component {
                 О нас
               </Link>
             </li>
-            <i className="fa fa-circle hidden-xs" aria-hidden="true" />  
+            <i className="fa fa-circle hidden-xs hidden-sm" aria-hidden="true" />  
             <li className={this.getActiveClass(activeServices)}>
               <Link to='/services'
                 className='navItem__refer'
@@ -106,7 +106,7 @@ export default class Navigation extends Component {
                 Услуги
               </Link>
             </li>
-            <i className="fa fa-circle hidden-xs" aria-hidden="true" />  
+            <i className="fa fa-circle hidden-xs hidden-sm" aria-hidden="true" />  
             <li className={this.getActiveClass(activeConnect)}>
               <Link to='/connect'
                 className='navItem__refer'
@@ -114,12 +114,20 @@ export default class Navigation extends Component {
                 Контакты
               </Link>
             </li>
-            <i className="fa fa-circle hidden-xs" aria-hidden="true" />  
+            <i className="fa fa-circle hidden-xs hidden-sm" aria-hidden="true" />  
             <li className={this.getActiveClass(activePrices)}>
               <Link to='/prices' 
                 className='navItem__refer'
                 onClick={this.changeActivePrices}>
                 Цены
+              </Link>
+            </li>
+            <i className="fa fa-circle hidden-xs hidden-sm" aria-hidden="true" />  
+            <li className={this.getActiveClass(activePatterns)}>
+              <Link to='/templates' 
+                className='navItem__refer'
+                onClick={this.changeActivePatterns}>
+                Шаблоны
               </Link>
             </li>
           </ul>

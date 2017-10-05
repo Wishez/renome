@@ -172,14 +172,14 @@ const LOGO = (function(that, $) {
   let _animateId;
   const _drawLogo = () => {
     if (window.innerWidth <= 800) {
-      // window.cancelAnimationFrame(_animateId);
+      window.cancelAnimationFrame(_animateId);
     } else {
       _drawBox();
       _drawMast();
       _drawSea();
       _drawEye();
       _drawPupil(_pupilXpos + 10, _pupilYpos);
-      if (!amimateId)
+      if (!_animateId)
         _animateId = window.requestAnimationFrame(_animateCanvas);
     } 
   };

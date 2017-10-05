@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import ListPricesItem from './ListPricesItem.js';
 import Title from './Title';
+import OrderForm from './OrderForm';
 
 export default class Prices extends Component {
+	static state = {
+		serviceId: 0
+	}
 	render() {
 		return(
 			<div>
 				<section className='prices text-center'>
 					<div className='container'>
+						<OrderForm />
 						<Title block='prices' text='Прайс-лист' />
 						<ul className='listPrices'>
 							<li>
@@ -33,22 +38,22 @@ export default class Prices extends Component {
 									title='Интернет</br>магазин' 
 									prices='
 											<li class="pricing__item">
-												Техническое задание:&thinsp;<strong>2500&#8381;</strong>
+												Техническое задание:&thinsp;<strong>2000&#8381;</strong>
 											</li>
 											<li class="pricing__item">
-												Уникальный дизайн:&thinsp;<strong>5000&#8381;</strong>
+												Уникальный дизайн:&thinsp;<strong>6250&#8381;</strong>
 											</li>
 											<li class="pricing__item">
-												Адаптивна вёрстка:&thinsp;<strong>5000&#8381;</strong>
+												Вёрстка:&thinsp;<strong>5000&#8381;</strong>
 											</li>
 											<li class="pricing__item">
-												Программирование:&thinsp;<strong>15000&#8381;</strong>
+												Функциональность:&thinsp;<strong>8750&#8381;</strong>
 											</li>
 											<li class="pricing__item">
-												Настройка сервера:&thinsp;<strong>1500&#8381;</strong>
+												Настройка сервера:&thinsp;<strong>1000&#8381;</strong>
 											</li>
 											<li class="pricing__item pricing__item--total">
-												&#126;46 дней&thinsp;&mdash;&thinsp;<strong>29500&#8381;</strong>
+												&#126;18 дней&thinsp;&mdash;&thinsp;<strong>23000&#8381;</strong>
 											</li>'
 									fontColor='black'
 									backgroundColor='white'
@@ -60,7 +65,7 @@ export default class Prices extends Component {
 									title='Уникальный</br>дизайн' 
 									prices='
 									<li class="pricing__item text-left">
-										Около-недельная работа над фирменным стилем<span class="center-block text-center"></br>&mdash;</br><strong>5000&#8381;</strong></span>
+										<span class="center-block text-center">До <strong>7</strong> дней<br />&mdash;</br><strong>6250&#8381;</strong></span>
 									</li>'
 									fontColor='whiteOrange'
 									backgroundColor='darkBlue'
@@ -72,22 +77,22 @@ export default class Prices extends Component {
 									title='Лэндинг</br>пэйдж' 
 									prices='
 											<li class="pricing__item">
-												Техническое задание:&thinsp;<strong>2500&#8381;</strong>
+												Техническое задание:&thinsp;<strong>2000&#8381;</strong>
 											</li>
 											<li class="pricing__item">
-												Уникальный дизайн:&thinsp;<strong>5000&#8381;</strong>
+												Уникальный дизайн:&thinsp;<strong>6250&#8381;</strong>
 											</li>
 											<li class="pricing__item">
-												Адаптивна вёрстка:&thinsp;<strong>5000&#8381;</strong>
+												Вёрстка:&thinsp;<strong>2750&#8381;</strong>
 											</li>
 											<li class="pricing__item">
-												Программирование:&thinsp;<strong>5000&#8381;</strong>
+												Функциональность:&thinsp;<strong>2750&#8381;</strong>
 											</li>
 											<li class="pricing__item">
-												Настройка сервера:&thinsp;<strong>1500&#8381;</strong>
+												Настройка сервера:&thinsp;<strong>1000&#8381;</strong>
 											</li>
 											<li class="pricing__item pricing__item--total">
-												&#126;29 дней&thinsp;&mdash;&thinsp;<strong>19000&#8381;</strong>
+												&#126;15 дней&thinsp;&mdash;&thinsp;<strong>15250&#8381;</strong>
 											</li>'
 									fontColor='purple'
 									backgroundColor='whiteYellow'
@@ -98,22 +103,22 @@ export default class Prices extends Component {
 								<ListPricesItem 
 									title='Сайт</br>визитка' 
 									prices='<li class="pricing__item">
-												Техническое задание:&thinsp;<strong>2500&#8381;</strong>
+												Техническое задание:&thinsp;<strong>2000&#8381;</strong>
 											</li>
 											<li class="pricing__item">
-												Уникальный дизайн:&thinsp;<strong>5000&#8381;</strong>
+												Уникальный дизайн:&thinsp;<strong>6250&#8381;</strong>
 											</li>
 											<li class="pricing__item">
-												Адаптивна вёрстка:&thinsp;<strong>5000&#8381;</strong>
+												Вёрстка:&thinsp;<strong>5000&#8381;</strong>
 											</li>
 											<li class="pricing__item">
-												Программирование:&thinsp;<strong>10000&#8381;</strong>
+												Функциональность:&thinsp;<strong>5000&#8381;</strong>
 											</li>
 											<li class="pricing__item">
-												Настройка сервера:&thinsp;<strong>1500&#8381;</strong>
+												Настройка сервера:&thinsp;<strong>1000&#8381;</strong>
 											</li>
 											<li class="pricing__item pricing__item--total">
-												&#126;39 дней&thinsp;&mdash;&thinsp;<strong>24500&#8381;</strong>
+												&#126;39 дней&thinsp;&mdash;&thinsp;<strong>19250&#8381;</strong>
 											</li>'
 									fontColor='white'
 									backgroundColor='black'

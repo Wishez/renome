@@ -207,7 +207,7 @@ gulp.task('bundle', ['js', 'scss', 'fastmedia', 'html', 'fonts']);
 
 gulp.task('default', ['bundle'], () => {
   gulp.watch(settings.src + '/**/*.scss', ['scss']);
-  gulp.watch(settings.src + '/img/**/*.*', ['images']);
+  gulp.watch(settings.src + '/img/**/*.*', ['fastimages']);
   gulp.watch(settings.src + '/**/*.pug', ['html']);
   gulp.watch(settings.src + '/**/*.js', ['js']);
   //gulp.watch('./**/*', []).on('change', browserSync.reload);

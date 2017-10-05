@@ -8,9 +8,6 @@ $(window).resize(() => {
     navListStyle.display = 'inline-flex';
   } else  {
     navListStyle.display = 'none';
-    // $.LOGO.setSettings({
-    //   font: 'bold 30px Lora'
-    // });
   }
 });
 

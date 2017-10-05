@@ -16,13 +16,13 @@
 	.pricing__item {
 		font-style: italic;
 		line-height: (27em / 21);
-		margin-top: 2em;
+		margin-top: 4.5em;
 		padding: 0 30px;
 		@include breakpoint($md-less) {
 			margin-top: 4em;
 		}
 		& span {
-			margin-top: -20px;
+			
 
 		}
 	}

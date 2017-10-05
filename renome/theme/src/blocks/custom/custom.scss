@@ -104,15 +104,14 @@ $i: !important;
 
 
 @mixin responsive-background($padding-bottom: false, $url: false) {
-  // background: center top no-repeat fixed;
-  // background-size: cover;
+  background: center top no-repeat;
+  background-size: cover; 
   @if $padding-bottom {
     padding-bottom: #{$padding-bottom};
   }
   @if $url {
     background-image: url('#{$url}');
   }
-  // @extend .responsiveBackground;
 
 }
 
