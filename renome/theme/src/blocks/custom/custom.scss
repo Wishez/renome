@@ -104,7 +104,6 @@ $i: !important;
 
 
 @mixin responsive-background($padding-bottom: false, $url: false) {
-  background: center top no-repeat;
   background-size: cover; 
   @if $padding-bottom {
     padding-bottom: #{$padding-bottom};
